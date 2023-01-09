@@ -45,3 +45,21 @@ article h1 {
     29px 29px 1px rgba(0, 0, 0, 0.5),
     0px 0px 28px rgba(0, 0, 0, .2);
 }
+
+.style {
+  
+}
+
+.button-launch {
+  background-color: #8026c9;
+  border-color: darkviolet;
+  color: black;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button-launch:hover {
+  background-color: black;
+  color: white;
+}
