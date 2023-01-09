@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+article {
+  flex-grow: 1;
+}
+
+article h1 {
+  color: #fff;
+}
+
+article h2 {
+  color: #fff;
+}
+
+/* .earth {
+  width: 80rem;
+} */
