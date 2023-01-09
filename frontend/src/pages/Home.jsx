@@ -1,6 +1,7 @@
+import React from "react";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+function Home() {
   const style = {
     backgroundImage: "url(https://www.example.com/space.jpg)",
     backgroundSize: "cover",
@@ -32,3 +33,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
