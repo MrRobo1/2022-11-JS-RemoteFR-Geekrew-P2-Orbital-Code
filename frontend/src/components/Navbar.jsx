@@ -5,21 +5,13 @@ import logoImg from "../assets/logo.png";
 import burgerImg from "../assets/menu-btn.png";
 
 function Navbar() {
-  // const onPressBurger = () => {
-
-  // }
-
   return (
     <header>
       <nav className={styles.navbar}>
         <a href="index.html" className={styles["navbar-brand"]}>
           <img src={logoImg} alt="logo" className={styles.logo} />
         </a>
-        <button
-          type="button"
-          className={styles["burger-menu"]}
-          // onClick={() => onPressBurger()}
-        >
+        <button type="button" className={styles["burger-menu"]}>
           <img
             src={burgerImg}
             alt="burger menu"

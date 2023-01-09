@@ -5,17 +5,43 @@
 }
 
 article {
-  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 article h1 {
-  color: #fff;
+  color: #8026c9;
+  margin-top: 3rem;
+  text-shadow: 0px 0px 0 rgb(121, 31, 194),
+    1px 1px 0 rgb(114, 24, 187),
+    2px 2px 0 rgb(107, 17, 180),
+    3px 3px 0 rgb(100, 10, 173),
+    4px 4px 0 rgb(92, 2, 165),
+    5px 5px 0 rgb(85, -5, 158),
+    6px 6px 0 rgb(78, -12, 151),
+    7px 7px 0 rgb(71, -19, 144),
+    8px 8px 0 rgb(64, -26, 137),
+    9px 9px 0 rgb(57, -33, 130),
+    10px 10px 0 rgb(50, -40, 123),
+    11px 11px 0 rgb(43, -47, 116),
+    12px 12px 0 rgb(36, -54, 109),
+    13px 13px 0 rgb(29, -61, 102),
+    14px 14px 0 rgb(21, -69, 94),
+    15px 15px 0 rgb(14, -76, 87),
+    16px 16px 0 rgb(7, -83, 80),
+    17px 17px 0 rgb(0, -90, 73),
+    18px 18px 0 rgb(-7, -97, 66),
+    19px 19px 0 rgb(-14, -104, 59),
+    20px 20px 0 rgb(-21, -111, 52),
+    21px 21px 0 rgb(-28, -118, 45),
+    22px 22px 0 rgb(-35, -125, 38),
+    23px 23px 0 rgb(-43, -133, 30),
+    24px 24px 0 rgb(-50, -140, 23),
+    25px 25px 0 rgb(-57, -147, 16),
+    26px 26px 0 rgb(-64, -154, 9),
+    27px 27px 0 rgb(-71, -161, 2),
+    28px 28px 0 rgb(-78, -168, 0),
+    29px 29px 28px rgba(0, 0, 0, 0.6),
+    29px 29px 1px rgba(0, 0, 0, 0.5),
+    0px 0px 28px rgba(0, 0, 0, .2);
 }
-
-article h2 {
-  color: #fff;
-}
-
-/* .earth {
-  width: 80rem;
-} */

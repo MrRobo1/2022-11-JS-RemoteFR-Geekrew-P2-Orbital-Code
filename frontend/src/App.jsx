@@ -1,10 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 import Planets from "./pages/Planets";
 import Rockets from "./pages/Rockets";
-// import styles from "./styles/App.module.css";
 
 function App() {
   return (
