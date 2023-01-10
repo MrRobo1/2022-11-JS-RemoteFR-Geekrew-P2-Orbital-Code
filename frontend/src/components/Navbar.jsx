@@ -17,14 +17,14 @@ function Navbar() {
           <img src={logoImg} alt="logo" className={styles.logo} />
         </a>
 
-{ isActive ? <button type="button" className={styles["burger-menu"]}>
+        <button type="button" className={styles["burger-menu"]}>
           <img
             src={burgerImg}
             alt="burger menu"
             className={styles["burger-img"]}
           />
-        </button>}
-        
+        </button>
+
         <div className={styles["nav-links"]}>
           <ul>
             <li className={styles.active}>
