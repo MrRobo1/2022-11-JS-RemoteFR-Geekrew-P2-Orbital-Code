@@ -1,7 +1,12 @@
 import React from "react";
+import Planet from "../components/Planet";
 
 function Planets() {
-  return <div>Planets</div>;
+  return (
+    <div>
+      <Planet />
+    </div>
+  );
 }
 
 export default Planets;
