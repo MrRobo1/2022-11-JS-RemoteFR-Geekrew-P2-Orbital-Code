@@ -1,35 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "../styles/Home.module.css";
+import earthImg from "../assets/earth.png";
 
 function Home() {
-  const style = {
-    backgroundImage: "url(https://www.example.com/space.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    position: "relative",
-  };
+  const navigate = useNavigate();
 
-  const starStyle = {
-    width: "20px",
-    height: "20px",
-    backgroundImage: "url(https://www.example.com/stars.png)",
-    backgroundSize: "cover",
-    position: "absolute",
-    top: "30%",
-    left: "70%",
-    zIndex: 1,
+  const redirectPath = () => {
+    const path = `/planets`;
+    navigate(path);
   };
 
   return (
     <div className={styles.container}>
       <h1>Explore the cosmos beyond the imaginable!</h1>
-      <div style={style}>
-        <div style={starStyle} />
+      <div style={styles.starStyle} />
 
-        <button type="button" className={styles["button-launch"]}>
-          Ready for Launch
-        </button>
-      </div>
+      <button
+        type="button"
+        className={styles["button-redirect"]}
+        onClick={() => redirectPath()}
+      >
+        Ready for Launch
+      </button>
+      <img src={earthImg} alt="earth" className={styles.earth} />
     </div>
   );
 }
