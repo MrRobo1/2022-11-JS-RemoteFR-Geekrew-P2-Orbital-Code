@@ -5,6 +5,12 @@ import logoImg from "../assets/logo.png";
 import burgerImg from "../assets/menu-btn.png";
 
 function Navbar() {
+  // const [showLinks, setShowLinks] = useState(false);
+
+  // const onPressBurger = () => {
+  //   setShowLinks(!showLinks);
+  // };
+
   const activeStyle = ({ isActive }) => {
     if (isActive) return { color: "#fff" };
     return undefined;
@@ -16,15 +22,14 @@ function Navbar() {
         <a href="/" className={styles["navbar-brand"]}>
           <img src={logoImg} alt="logo" className={styles.logo} />
         </a>
-
         <button type="button" className={styles["burger-menu"]}>
           <img
             src={burgerImg}
             alt="burger menu"
             className={styles["burger-img"]}
+            // onClick={() => onPressBurger()}
           />
         </button>
-
         <div className={styles["nav-links"]}>
           <ul>
             <li className={styles.active}>
