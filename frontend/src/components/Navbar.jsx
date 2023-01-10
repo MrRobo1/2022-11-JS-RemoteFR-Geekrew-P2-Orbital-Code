@@ -5,29 +5,42 @@ import logoImg from "../assets/logo.png";
 import burgerImg from "../assets/menu-btn.png";
 
 function Navbar() {
+  const activeStyle = ({ isActive }) => {
+    if (isActive) return { color: "#fff" };
+    return undefined;
+  };
+
   return (
     <header>
       <nav className={styles.navbar}>
-        <a href="index.html" className={styles["navbar-brand"]}>
+        <a href="/" className={styles["navbar-brand"]}>
           <img src={logoImg} alt="logo" className={styles.logo} />
         </a>
-        <button type="button" className={styles["burger-menu"]}>
+
+{ isActive ? <button type="button" className={styles["burger-menu"]}>
           <img
             src={burgerImg}
             alt="burger menu"
             className={styles["burger-img"]}
           />
-        </button>
+        </button>}
+        
         <div className={styles["nav-links"]}>
           <ul>
             <li className={styles.active}>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" style={activeStyle}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/planets">Planets</NavLink>
+              <NavLink to="/planets" style={activeStyle}>
+                Planets
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/rockets">Rockets</NavLink>
+              <NavLink to="/rockets" style={activeStyle}>
+                Rockets
+              </NavLink>
             </li>
           </ul>
         </div>
