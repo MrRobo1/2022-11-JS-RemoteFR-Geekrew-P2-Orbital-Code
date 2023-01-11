@@ -8,7 +8,7 @@ import Rockets from "./pages/Rockets";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/rockets" element={<Rockets />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 

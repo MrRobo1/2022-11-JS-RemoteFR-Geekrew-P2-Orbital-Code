@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../styles/Navbar.module.css";
 import logoImg from "../assets/logo.png";
 import burgerImg from "../assets/menu-btn.png";
+import closeBurgerImg from "../assets/close-menu-btn.png";
 
 function Navbar() {
-  // const [showLinks, setShowLinks] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
 
-  // const onPressBurger = () => {
-  //   setShowLinks(!showLinks);
-  // };
+  const onPressBurger = () => {
+    setShowLinks(!showLinks);
+  };
 
   const activeStyle = ({ isActive }) => {
     if (isActive) return { color: "#fff" };
@@ -22,15 +23,26 @@ function Navbar() {
         <a href="/" className={styles["navbar-brand"]}>
           <img src={logoImg} alt="logo" className={styles.logo} />
         </a>
-        <button type="button" className={styles["burger-menu"]}>
+        <button
+          type="button"
+          onClick={onPressBurger}
+          className={styles["burger-menu"]}
+        >
           <img
-            src={burgerImg}
+            src={showLinks ? burgerImg : closeBurgerImg}
             alt="burger menu"
             className={styles["burger-img"]}
-            // onClick={() => onPressBurger()}
           />
         </button>
-        <div className={styles["nav-links"]}>
+        <div
+          className={`${styles["nav-links"]} ${
+            showLinks ? styles["mobile-menu"] : ""
+          }`}
+          onClick={onPressBurger}
+          onKeyDown={onPressBurger}
+          role="button"
+          tabIndex="0"
+        >
           <ul>
             <li className={styles.active}>
               <NavLink to="/" style={activeStyle}>

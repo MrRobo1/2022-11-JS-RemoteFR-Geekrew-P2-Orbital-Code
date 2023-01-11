@@ -28,6 +28,12 @@
   width: 2.5rem;
 }
 
+.mobile-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
 .nav-links {
   display: flex;
   justify-content: center;
@@ -39,6 +45,7 @@
   height: 100vh;
   background-color: rgba(4, 5, 23, 0.169);
   backdrop-filter: blur(0.8rem);
+  transition: opacity 700ms ease-in-out, visibility 700ms ease-in-out;
 }
 
 .nav-links ul {
