@@ -14,8 +14,6 @@ function Home() {
   return (
     <div className={styles.container}>
       <h1>Explore the cosmos beyond the imaginable!</h1>
-      <div style={styles.starStyle} />
-
       <button
         type="button"
         className={styles["button-redirect"]}
