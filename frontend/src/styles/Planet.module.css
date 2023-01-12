@@ -1,8 +1,8 @@
 .Planet,
 .Planet:before,
 .Planet:after {
-  height: 350px;
-  width: 350px;
+  height: 190px;
+  width: 190px;
   border-radius: 100vw;
   will-change: transform;
   margin: 0 auto;
@@ -71,38 +71,16 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1150px) {
 
-
-
-
-@keyframes myrotate {
-    0% {
-      transform: rotatez(250deg);
-    }
-
-    100% {
-      transform: rotatez(360deg);
-    }
+.Planet,
+  .Planet:before,
+  .Planet:after {
+    height: 300px;
+    width: 300px;
+    border-radius: 100vw;
+    will-change: transform;
+    margin: 0 auto;
   }
-
-  @keyframes myopacity {
-    0% {
-      background-position: 0px;
-      transform: rotatez(0deg);
-    }
-
-    50% {
-      background-position: 100000000px;
-    }
-
-    100% {
-      background-position: 0;
-      transform: rotatez(-360deg);
-    }
-  }
-
-
-
 
 }
