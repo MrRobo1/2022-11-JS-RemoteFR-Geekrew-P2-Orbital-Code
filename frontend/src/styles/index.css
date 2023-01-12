@@ -6,7 +6,10 @@
   padding: 0;
 }
 
-html, #root {
+html,
+#root {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -24,4 +27,8 @@ body {
 
 button {
   background: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
