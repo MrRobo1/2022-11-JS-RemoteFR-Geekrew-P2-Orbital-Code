@@ -1,10 +1,10 @@
 import React from "react";
-import Planet from "../components/Planet";
+import PlanetCarousel from "../components/PlanetCarousel";
 
 function Planets() {
   return (
     <div>
-      <Planet />
+      <PlanetCarousel />
     </div>
   );
 }

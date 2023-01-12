@@ -42,7 +42,7 @@
 .Planet:after {
   filter: saturate(2.5);
   background: linear-gradient(rgba(0, 0, 0, 1), transparent),
-    url("../assets/planetsTextures/moon.jpg");
+    url("../assets/planetsTextures/jupiter.jpg");
   box-shadow: inset -20px -20px 14px 2px rgba(0, 0, 0, 0.2);
   animation-name: myopacity;
   animation-duration: 9900000s;
@@ -50,7 +50,7 @@
 
 @keyframes myrotate {
   0% {
-    transform: rotatez(0deg);
+    transform: rotatez(180deg);
   }
   100% {
     transform: rotatez(360deg);
@@ -69,4 +69,40 @@
     background-position: 0;
     transform: rotatez(-360deg);
   }
+}
+
+@media screen and (min-width: 900px) {
+
+
+
+
+@keyframes myrotate {
+    0% {
+      transform: rotatez(250deg);
+    }
+
+    100% {
+      transform: rotatez(360deg);
+    }
+  }
+
+  @keyframes myopacity {
+    0% {
+      background-position: 0px;
+      transform: rotatez(0deg);
+    }
+
+    50% {
+      background-position: 100000000px;
+    }
+
+    100% {
+      background-position: 0;
+      transform: rotatez(-360deg);
+    }
+  }
+
+
+
+
 }
