@@ -1,8 +1,6 @@
 import React from "react";
 import PlanetCarousel from "../components/PlanetCarousel";
 
-
-
 function Planets() {
   return (
     <div>
