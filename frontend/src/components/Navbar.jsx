@@ -23,10 +23,9 @@ function Navbar() {
 
   useLayoutEffect(() => {
     if (window.innerWidth < 900) {
-      // eslint-disable-next-line no-unused-expressions
-      !showLinks
-        ? document.getElementById("root").classList.add("no-scroll")
-        : document.getElementById("root").classList.remove("no-scroll");
+      if (showLinks) {
+        document.getElementById("root").classList.remove("no-scroll");
+      } else document.getElementById("root").classList.add("no-scroll");
     }
   });
 

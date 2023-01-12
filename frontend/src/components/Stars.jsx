@@ -60,19 +60,7 @@ function Stars() {
     await loadFull(main);
   };
 
-  const particlesLoaded = (container) => {
-    // eslint-disable-next-line no-restricted-syntax
-    console.log(container);
-  };
-
-  return (
-    <Particles
-      id="tsparticles"
-      options={options}
-      init={particlesInit}
-      loaded={particlesLoaded}
-    />
-  );
+  return <Particles id="tsparticles" options={options} init={particlesInit} />;
 }
 
 export default Stars;
