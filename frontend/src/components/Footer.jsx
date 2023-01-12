@@ -1,5 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import styles from "../styles/Footer.module.css";
+
 import gitHubImg from "../assets/github.svg";
 
 function Footer() {
@@ -7,23 +10,23 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles["footer-content"]}>
         <div className={styles["footer-section"]}>
-          <a href="/">About</a>
+          <Link to="/">About</Link>
         </div>
         <div className={styles["footer-section"]}>
-          <a href="/">Questions</a>
+          <Link to="/">Questions</Link>
         </div>
         <div className={styles["footer-section"]}>
-          <a href="/">Contact</a>
+          <Link to="/">Contact</Link>
         </div>
         <div className={styles["footer-section"]}>
           <p>© GalaxyGetaways 2023</p>
-          <a href="https://github.com/WildCodeSchool/2022-11-JS-RemoteFR-Geekrew-P2-Orbital-Code">
+          <Link to="https://github.com/WildCodeSchool/2022-11-JS-RemoteFR-Geekrew-P2-Orbital-Code">
             <img
               src={gitHubImg}
               alt="github"
               className={styles["github-link"]}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

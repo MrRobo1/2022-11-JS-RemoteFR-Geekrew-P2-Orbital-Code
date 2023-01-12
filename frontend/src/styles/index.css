@@ -28,3 +28,7 @@ body {
 button {
   background: none;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

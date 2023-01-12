@@ -1,28 +1,41 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useLayoutEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
+
 import styles from "../styles/Navbar.module.css";
+
 import logoImg from "../assets/logo.png";
 import burgerImg from "../assets/menu-btn.png";
 import closeBurgerImg from "../assets/close-menu-btn.png";
 
 function Navbar() {
-  const [showLinks, setShowLinks] = useState(false);
-
-  const onPressBurger = () => {
-    setShowLinks(!showLinks);
-  };
+  const [showLinks, setShowLinks] = useState(window.innerWidth < 900);
 
   const activeStyle = ({ isActive }) => {
     if (isActive) return { color: "#fff" };
     return undefined;
   };
 
+  const onPressBurger = () => {
+    if (window.innerWidth < 900) {
+      setShowLinks(!showLinks);
+    }
+  };
+
+  useLayoutEffect(() => {
+    if (window.innerWidth < 900) {
+      // eslint-disable-next-line no-unused-expressions
+      !showLinks
+        ? document.getElementById("root").classList.add("no-scroll")
+        : document.getElementById("root").classList.remove("no-scroll");
+    }
+  });
+
   return (
     <header>
       <nav className={styles.navbar}>
-        <a href="/" className={styles["navbar-brand"]}>
+        <Link to="/" className={styles["navbar-brand"]}>
           <img src={logoImg} alt="logo" className={styles.logo} />
-        </a>
+        </Link>
         <button
           type="button"
           onClick={onPressBurger}

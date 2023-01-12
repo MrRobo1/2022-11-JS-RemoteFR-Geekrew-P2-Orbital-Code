@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import styles from "../styles/Home.module.css";
+
 import earthImg from "../assets/earth.png";
 
 function Home() {
   const [launchRocket, setLaunchRocket] = useState(false);
+  const [hideThings, setHideThings] = useState(false);
   const navigate = useNavigate();
 
   const redirectPath = () => {
+    setHideThings(true);
     setLaunchRocket(!launchRocket);
     const path = `/planets`;
     setTimeout(() => {
@@ -17,8 +21,16 @@ function Home() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Galaxy Getaways</h1>
-      <h1 className={styles.slogan}>
+      <h1
+        className={`${styles.title} ${hideThings ? styles["hide-things"] : ""}`}
+      >
+        Galaxy Getaways
+      </h1>
+      <h1
+        className={`${styles.slogan}  ${
+          hideThings ? styles["hide-things"] : ""
+        }`}
+      >
         Explore the cosmos beyond the imaginable!
       </h1>
       <div
@@ -43,7 +55,9 @@ function Home() {
       </div>
       <button
         type="button"
-        className={styles["button-redirect"]}
+        className={`${styles["button-redirect"]} ${
+          hideThings ? styles["hide-things"] : ""
+        }`}
         onClick={() => redirectPath()}
       >
         Ready for Launch
