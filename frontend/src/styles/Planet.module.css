@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.planet-name {
+  align-self: center;
+  color: rgb(255, 135, 135);
+  font-size: 2.8rem;
+}
+
+.planet-details {
+  margin: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+.planet-composition-title {
+  margin-top: 7rem;
+  margin-left: 1rem;
+  color: rgb(0, 213, 255);
+}
+
+
+.planet-composition {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.planet-climate-title {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5rem;
+  margin-right: 1rem;
+  color: #f7941f;
+}
+
+
+.planet-climate {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
