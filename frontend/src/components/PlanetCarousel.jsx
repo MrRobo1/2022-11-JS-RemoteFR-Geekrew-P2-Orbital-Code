@@ -3,11 +3,6 @@ import { Carousel } from "react-carousel3/dist/esm";
 import BlackHole from "./BlackHole";
 import Planet from "./Planet";
 
-const style = {
-  width: 250,
-  height: 400,
-};
-
 export default function PlanetCarousel() {
   return (
     <div
@@ -19,32 +14,32 @@ export default function PlanetCarousel() {
       <Carousel
         height={600}
         width={2500}
-        yOrigin={102}
-        yRadius={125}
+        yOrigin={200}
+        yRadius={150}
         autoPlay={false}
       >
-        <div key={1} style={style}>
+        <div key={1}>
+          <Planet />
+        </div>
+        <div key={2}>
+          <Planet />
+        </div>
+        <div key={3}>
+          <Planet />
+        </div>
+        <div key={4}>
+          <Planet />
+        </div>
+        <div key={5}>
           <BlackHole />
         </div>
-        <div key={2} style={style}>
+        <div key={6}>
           <Planet />
         </div>
-        <div key={3} style={style}>
+        <div key={7}>
           <Planet />
         </div>
-        <div key={4} style={style}>
-          <Planet />
-        </div>
-        <div key={5} style={style}>
-          <Planet />
-        </div>
-        <div key={6} style={style}>
-          <Planet />
-        </div>
-        <div key={7} style={style}>
-          <Planet />
-        </div>
-        <div key={8} style={style}>
+        <div key={8}>
           <Planet />
         </div>
       </Carousel>
