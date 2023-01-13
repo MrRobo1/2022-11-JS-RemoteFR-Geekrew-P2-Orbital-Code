@@ -19,8 +19,7 @@
 }
 
 .hide-things {
-  animation: fadeOut 2000ms;
-  animation: fadeIn 2000ms;
+  animation: fadeOut 1500ms;
 }
 
 @keyframes fadeOut {
