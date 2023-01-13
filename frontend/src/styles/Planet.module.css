@@ -72,8 +72,7 @@
 }
 
 @media screen and (min-width: 1150px) {
-
-.Planet,
+  .Planet,
   .Planet:before,
   .Planet:after {
     height: 300px;
@@ -82,5 +81,4 @@
     will-change: transform;
     margin: 0 auto;
   }
-
 }
