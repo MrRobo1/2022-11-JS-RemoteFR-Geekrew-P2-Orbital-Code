@@ -6,6 +6,7 @@
 
 .planet-name {
   align-self: center;
+  margin-top: 2.5rem;
   color: rgb(255, 135, 135);
   font-size: 3rem;
 }
@@ -20,12 +21,12 @@
 
 .planet-composition-title {
   margin-top: 7rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
   color: rgb(0, 213, 255);
 }
 
 .planet-composition {
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-top: 1rem;
   color: #fff;
   font-size: 1rem;
@@ -35,16 +36,16 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 2.5rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   color: #f7941f;
 }
 
 .planet-climate {
   display: flex;
   justify-content: flex-end;
-  margin-right: 1rem;
+  margin-right: 2rem;
   margin-top: 1rem;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
   color: #fff;
   font-size: 1rem;
 }
@@ -52,9 +53,26 @@
 .planet-activities-title {
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   margin-right: 1rem;
   color: #fff;
   font-size: 2rem;
-  margin-bottom: 20rem;
+  margin-bottom: 3rem;
+}
+
+.activity {
+  display: flex;
+  align-self: center;
+  margin-bottom: 10rem;
+  height: 30%;
+  width: 50%;
+}
+
+.planet-hotel-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 2rem;
 }

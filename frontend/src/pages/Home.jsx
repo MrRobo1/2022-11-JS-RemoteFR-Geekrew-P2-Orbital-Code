@@ -31,7 +31,8 @@ function Home() {
           hideThings ? styles["hide-things"] : ""
         }`}
       >
-        Explore the cosmos beyond the imaginable!
+        Explore the <span className={styles.cosmos}>cosmos</span> beyond the
+        imaginable!
       </h1>
       <div
         id="rocket"

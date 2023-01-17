@@ -4,6 +4,9 @@ import Planet from "../components/Planet";
 
 import styles from "../styles/PlanetDetail.module.css";
 
+import activity1 from "../assets/planetsActivities/biking.png";
+import activity2 from "../assets/planetsActivities/surfing.png";
+
 function PlanetDetail() {
   return (
     <div className={styles.container}>
@@ -27,8 +30,11 @@ function PlanetDetail() {
         industry. Lorem Ipsum has been the <br />
         industry's standard dummy text ever.
       </p>
-      <Planet />
+      <Planet planetDetail />
       <h1 className={styles["planet-activities-title"]}>Activities</h1>
+      <img src={activity1} alt="biking" className={styles.activity} />
+      <h1 className={styles["planet-hotel-title"]}>Hotel</h1>
+      <img src={activity2} alt="biking" className={styles.activity} />
     </div>
   );
 }

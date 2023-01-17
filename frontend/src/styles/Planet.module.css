@@ -86,3 +86,10 @@
     margin: 0 auto;
   }
 }
+
+.planet-detail,
+.planet-detail:before,
+.planet-detail:after {
+  width: 35rem;
+  height: 35rem;
+}
