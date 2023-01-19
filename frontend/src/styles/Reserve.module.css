@@ -5,6 +5,18 @@
   height: 100%;
 }
 
+.Reserv-box a {
+  border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+}
+
 .Reserv-box {
   width: 300px;
   padding: 40px;
