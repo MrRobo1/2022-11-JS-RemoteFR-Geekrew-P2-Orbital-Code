@@ -24,11 +24,6 @@
   font-weight: lighter;
 }
 
-/* .cosmos {
-  color: #746bff;
-  text-shadow: #ffffff 3px 3px 50px;
-} */
-
 .hide-things {
   animation: fadeOut 1500ms;
 }

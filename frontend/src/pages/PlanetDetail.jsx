@@ -21,7 +21,7 @@ function PlanetDetail() {
       <div styles={styles["small-cards"]}>
         <p className={styles["planet-type"]}>Rocky</p>
         <p className={styles["planet-diameter"]}>436845km</p>
-        <p className={styles["planet-distance"]}>35455566km from Earth</p>
+        <p className={styles["planet-distance"]}>3523542km to Earth</p>
       </div>
       <h1 className={styles["planet-composition-title"]}>Composition</h1>
       <p className={styles["planet-composition"]}>
