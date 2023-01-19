@@ -1,8 +1,8 @@
 .Planet,
 .Planet:before,
 .Planet:after {
-  height: 190px;
-  width: 190px;
+  height: 35vmin;
+  width: 35vmin;
   border-radius: 100vw;
   will-change: transform;
   margin: 0 auto;
@@ -52,6 +52,7 @@
   0% {
     transform: rotatez(180deg);
   }
+
   100% {
     transform: rotatez(360deg);
   }
@@ -62,25 +63,13 @@
     background-position: 0px;
     transform: rotatez(0deg);
   }
+
   50% {
     background-position: 100000000px;
   }
+
   100% {
     background-position: 0;
     transform: rotatez(-360deg);
   }
-}
-
-@media screen and (min-width: 1150px) {
-
-.Planet,
-  .Planet:before,
-  .Planet:after {
-    height: 300px;
-    width: 300px;
-    border-radius: 100vw;
-    will-change: transform;
-    margin: 0 auto;
-  }
-
 }
