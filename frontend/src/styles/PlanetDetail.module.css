@@ -20,11 +20,10 @@
 }
 
 .small-cards {
-  
+  display: flex;
 }
 
 .planet-type {
-  display: flex;
   text-align: center;
   margin-right: 2rem;
   margin-top: 1rem;
@@ -44,7 +43,6 @@
 }
 
 .planet-diameter {
-  display: flex;
   text-align: center;
   margin-right: 2rem;
   margin-top: 1rem;
@@ -64,7 +62,6 @@
 }
 
 .planet-distance {
-  display: flex;
   text-align: center;
   margin-right: 2rem;
   margin-top: 1rem;
