@@ -19,9 +19,79 @@
   line-height: 1.7em;
 }
 
+.small-cards {
+  
+}
+
+.planet-type {
+  display: flex;
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: white;
+  width: 20%;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+  transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+}
+
+.planet-diameter {
+  display: flex;
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: white;
+  width: 20%;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+  transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+}
+
+.planet-distance {
+  display: flex;
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: white;
+  width: 20%;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+  transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+}
+
+.planet-type:hover {
+  box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+  color: #303030;
+}
+
 .planet-composition-title {
-  margin-top: 7rem;
   margin-left: 2rem;
+  margin-top: 2.5rem;
   color: rgb(0, 213, 255);
 }
 
@@ -45,7 +115,7 @@
   justify-content: flex-end;
   margin-right: 2rem;
   margin-top: 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 25rem;
   color: #fff;
   font-size: 1rem;
 }
