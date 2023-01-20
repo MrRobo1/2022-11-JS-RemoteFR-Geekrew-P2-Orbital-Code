@@ -86,7 +86,12 @@ function Reserve() {
               StarSpeeder 3000
             </label>
           </div>
-          <Link to="/Recap">
+          <div className={styles.BtnRocket}>
+            <Link to="/">
+              <i>En savoir plus sur les moyens de transport</i>
+            </Link>
+          </div>
+          <Link to="/recap">
             <span />
             <span />
             <span />

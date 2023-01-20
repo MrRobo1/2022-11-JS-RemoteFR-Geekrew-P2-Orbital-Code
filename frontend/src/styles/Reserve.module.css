@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  background-image: url("/frontend/src/assets/Pierre_A_cosmonaut_in_space_suit_view_from_space_with_deep_spac_0991692d-70a4-4885-8b2c-0798c68ab196.png");
 }
 
 .Reserv-box a {
@@ -181,6 +181,10 @@ input {
   100% {
     bottom: 100%;
   }
+}
+
+i {
+  font-size: 10px;
 }
 
 @media screen and (min-width: 900px) {
