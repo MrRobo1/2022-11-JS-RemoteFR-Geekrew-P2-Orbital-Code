@@ -1,8 +1,12 @@
 import React from "react";
-import styles from "../styles/Planets.module.css";
+import PlanetCarousel from "../components/PlanetCarousel";
 
 function Planets() {
-  return <div className={styles.container}>Planets</div>;
+  return (
+    <div>
+      <PlanetCarousel />
+    </div>
+  );
 }
 
 export default Planets;

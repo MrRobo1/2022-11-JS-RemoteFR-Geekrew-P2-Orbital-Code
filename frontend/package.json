@@ -10,11 +10,14 @@
     "fix": "prettier --write . && eslint --fix --ext .jsx ."
   },
   "dependencies": {
+    "react-carousel3": "^1.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.6.1",
-    "template-fullstack": "file:.."
+    "react-tsparticles": "^2.7.1",
+    "template-fullstack": "file:..",
+    "tsparticles": "^2.7.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

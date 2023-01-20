@@ -9,7 +9,7 @@
 
 .logo {
   width: 12rem;
-  filter: drop-shadow(0px 0px 20px rgba(44, 0, 165, 0.5));
+  filter: drop-shadow(0px 0px 20px rgba(100, 25, 220, 0.3));
 }
 
 .burger-menu {
@@ -26,6 +26,22 @@
 
 .burger-img {
   width: 2.5rem;
+  animation: fadeIn 1500ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.mobile-menu {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .nav-links {
@@ -39,6 +55,8 @@
   height: 100vh;
   background-color: rgba(4, 5, 23, 0.169);
   backdrop-filter: blur(0.8rem);
+  transition: opacity 700ms ease-in-out, visibility 700ms ease-in-out;
+  z-index: 300;
 }
 
 .nav-links ul {
