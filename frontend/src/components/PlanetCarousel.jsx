@@ -9,6 +9,7 @@ export default function PlanetCarousel() {
       style={{
         display: "flex",
         justifyContent: "center",
+        height: 700,
       }}
     >
       <Carousel
