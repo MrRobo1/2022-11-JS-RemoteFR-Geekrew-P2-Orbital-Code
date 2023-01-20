@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 .container {
   display: flex;
   flex-direction: column;
@@ -9,6 +11,8 @@
   margin-top: 2.5rem;
   font-size: 2.8rem;
   color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: #ffffff5d 3px 3px 50px;
 }
 
 .slogan {
@@ -16,10 +20,12 @@
   color: #6419dc;
   margin-top: 1rem;
   z-index: 200;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: lighter;
 }
 
 .hide-things {
-  animation: fadeOut 2000ms;
+  animation: fadeOut 1500ms;
 }
 
 @keyframes fadeOut {
@@ -44,13 +50,13 @@
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: Inter, sans-serif;
-  font-size: 1.3rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.5;
   padding: 0.5rem 1.5rem;
   height: 3.7rem;
-  width: 14rem;
+  width: 15;
   text-align: center;
   text-transform: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -68,12 +74,14 @@
 }
 
 .button-redirect:hover {
-  background-color: #3733e5;
+  background-color: #282698;
   border-color: #3733e5;
 }
 
 .button-redirect:focus {
-  background-color: #413fc5;
+  background-color: rgba(63,
+      173,
+      197, 0.1);
   border-color: #3e3bba;
   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
     rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
@@ -207,3 +215,4 @@
   z-index: 200;
   filter: drop-shadow(0px 0px 30px rgba(5, 0, 165, 0.2));
 }
+

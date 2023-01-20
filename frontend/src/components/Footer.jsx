@@ -20,13 +20,13 @@ function Footer() {
         </div>
         <div className={styles["footer-section"]}>
           <p>© GalaxyGetaways 2023</p>
-          <Link to="https://github.com/WildCodeSchool/2022-11-JS-RemoteFR-Geekrew-P2-Orbital-Code">
+          <a href="https://github.com/WildCodeSchool/2022-11-JS-RemoteFR-Geekrew-P2-Orbital-Code">
             <img
               src={gitHubImg}
               alt="github"
               className={styles["github-link"]}
             />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

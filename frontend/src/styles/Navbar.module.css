@@ -26,7 +26,6 @@
 
 .burger-img {
   width: 2.5rem;
-  animation: fadeIn 1500ms;
 }
 
 @keyframes fadeIn {
@@ -74,7 +73,7 @@
   text-decoration: none;
   display: block;
   font-size: 2rem;
-  color: #c8c8c8;
+  color: #787878;
 }
 
 @media screen and (min-width: 900px) {
@@ -113,3 +112,4 @@
     padding-inline: 1rem;
   }
 }
+
