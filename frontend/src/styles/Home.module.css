@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 
 .container {
   display: flex;
@@ -11,7 +11,7 @@
   margin-top: 2.5rem;
   font-size: 2.8rem;
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   text-shadow: #ffffff5d 3px 3px 50px;
 }
 
@@ -20,7 +20,7 @@
   color: #6419dc;
   margin-top: 1rem;
   z-index: 200;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: lighter;
 }
 
@@ -85,30 +85,27 @@
       173,
       197, 0.1);
   border-color: #5b3bbabe;
-  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
-    rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
-}
 
+  @keyframes flicker {
+    0% {
+      transform: rotate(-1deg);
+    }
 
-@keyframes flicker {
-  0% {
-    transform: rotate(-1deg);
-  }
+    20% {
+      transform: rotate(3deg) scaleY(1.05);
+    }
 
-  20% {
-    transform: rotate(3deg) scaleY(1.05);
-  }
+    60% {
+      transform: rotate(1deg);
+    }
 
-  60% {
-    transform: rotate(1deg);
-  }
+    80% {
+      transform: rotate(-1deg) scaleY(0.9);
+    }
 
-  80% {
-    transform: rotate(-1deg) scaleY(0.9);
-  }
-
-  100% {
-    transform: rotate(4deg);
+    100% {
+      transform: rotate(4deg);
+    }
   }
 }
 
