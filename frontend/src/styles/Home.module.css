@@ -28,7 +28,6 @@
   animation: fadeOut 1500ms;
 }
 
-
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -46,7 +45,7 @@
   cursor: pointer;
   height: 5%;
   width: 10%;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   padding: 0.8em 1.3em 0.8em 0.9em;
@@ -81,9 +80,7 @@
 }
 
 .btn-redirect:focus {
-  background-color: rgba(63,
-      173,
-      197, 0.1);
+  background-color: rgba(63, 173, 197, 0.1);
   border-color: #5b3bbabe;
 
   @keyframes flicker {

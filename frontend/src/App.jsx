@@ -8,6 +8,9 @@ import PlanetDetail from "./pages/PlanetDetail";
 import Rockets from "./pages/Rockets";
 import Footer from "./components/Footer";
 import Reserve from "./pages/Reserve";
+import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Route path="/planetdetail" element={<PlanetDetail />} />
         <Route path="/rockets" element={<Rockets />} />
         <Route path="/reservation" element={<Reserve />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </>
