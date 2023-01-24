@@ -9,16 +9,11 @@ export default function PlanetCarousel() {
       style={{
         display: "flex",
         justifyContent: "center",
-        height: 700,
+        height: 1000,
+        marginTop: -50,
       }}
     >
-      <Carousel
-        height={600}
-        width={2500}
-        yOrigin={200}
-        yRadius={150}
-        autoPlay={false}
-      >
+      <Carousel width={2500} yOrigin={200} yRadius={150} autoPlay={false}>
         <div key={1}>
           <Planet />
         </div>
