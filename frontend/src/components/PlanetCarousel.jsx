@@ -12,7 +12,7 @@ export default function PlanetCarousel() {
       }}
     >
       <Carousel
-        height={600}
+        height={1000}
         width={2500}
         yOrigin={200}
         yRadius={150}
@@ -25,7 +25,9 @@ export default function PlanetCarousel() {
           <Planet />
         </div>
         <div key={3}>
+          <button type="button" value="Mars"></button>
           <Planet />
+          Planete
         </div>
         <div key={4}>
           <Planet />

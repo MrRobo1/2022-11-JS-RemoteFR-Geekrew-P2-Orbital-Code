@@ -12,7 +12,7 @@ b {
   height: 31vmin;
   box-shadow: 1vmin 0 3vmin 2vmin #f50, inset -1vmin 0 3vmin 4vmin rgb(17, 9, 1),
     -4vmin 0 10vmin 0 #f60;
-  animation: bh 1s linear infinite;
+  animation: bh 5s linear infinite;
 }
 
 @keyframes bh {
@@ -47,14 +47,14 @@ b:after {
   left: -14vmin;
 }
 
-@media screen and (min-width: 1150px) {
+/* @media screen and (min-width: 1150px) {
   b {
     width: 40vmin;
     height: 41vmin;
     box-shadow: 1vmin 0 3vmin 2vmin #f50,
       inset -1vmin 0 3vmin 4vmin rgb(17, 9, 1),
       -4vmin 0 20vmin 0 rgb(128, 10, 10);
-    animation: bh 1s linear infinite;
+    animation: bh 5s linear infinite;
   }
 
   b:before {
@@ -63,4 +63,4 @@ b:after {
     left: 35vmin;
     box-shadow: yellow 0 0 2vmin 2vmin, yellow 2vmin 4vmin 2vmin 0.5vmin;
   }
-}
+} */
