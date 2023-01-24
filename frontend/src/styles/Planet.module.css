@@ -73,3 +73,13 @@ n.Planet,
     transform: rotatez(-360deg);
   }
 }
+
+.planet-name {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #fff;
+}
+
+.planet-name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

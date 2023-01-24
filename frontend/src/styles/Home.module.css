@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 
 .container {
   display: flex;
@@ -11,7 +11,7 @@
   margin-top: 2.5rem;
   font-size: 2.8rem;
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   text-shadow: #ffffff5d 3px 3px 50px;
 }
 
@@ -20,13 +20,14 @@
   color: #6419dc;
   margin-top: 1rem;
   z-index: 200;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: lighter;
 }
 
 .hide-things {
   animation: fadeOut 1500ms;
 }
+
 
 @keyframes fadeOut {
   from {
@@ -38,93 +39,73 @@
   }
 }
 
-.button-redirect {
+.btn-redirect {
   display: flex;
+  align-items: center;
   align-self: center;
-  appearance: button;
+  cursor: pointer;
+  height: 5%;
+  width: 10%;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0.8em 1.3em 0.8em 0.9em;
   border: 3px solid #36008d;
   border-radius: 1rem;
   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
     rgba(46, 54, 80, 0.075) 0 1px 1px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  padding: 0.5rem 1.5rem;
-  height: 3.7rem;
-  width: 15;
-  text-align: center;
-  text-transform: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  z-index: 200;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b6321, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
 }
 
-.button-redirect:focus:not(:focus-visible),
-.button-redirect:focus {
-  outline: 0;
+.btn-redirect svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.button-redirect:hover {
-  background-color: #282698;
-  border-color: #3733e5;
+.btn-redirect span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.button-redirect:focus {
+.btn-redirect:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+.btn-redirect:hover span {
+  transform: translateX(7px);
+}
+
+.btn-redirect:focus {
   background-color: rgba(63,
       173,
       197, 0.1);
-  border-color: #3e3bba;
-  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
-    rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
-}
+  border-color: #5b3bbabe;
 
-.button-redirect:active {
-  background-color: #3e3bba;
-  background-image: none;
-  border-color: #3a38ae;
-  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
-}
+  @keyframes flicker {
+    0% {
+      transform: rotate(-1deg);
+    }
 
-.button-redirect:active:focus {
-  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset,
-    rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
-}
+    20% {
+      transform: rotate(3deg) scaleY(1.05);
+    }
 
-.button-redirect:disabled {
-  background-image: none;
-  box-shadow: none;
-  opacity: 0.65;
-  pointer-events: none;
-}
+    60% {
+      transform: rotate(1deg);
+    }
 
-@keyframes flicker {
-  0% {
-    transform: rotate(-1deg);
-  }
+    80% {
+      transform: rotate(-1deg) scaleY(0.9);
+    }
 
-  20% {
-    transform: rotate(3deg) scaleY(1.05);
-  }
-
-  60% {
-    transform: rotate(1deg);
-  }
-
-  80% {
-    transform: rotate(-1deg) scaleY(0.9);
-  }
-
-  100% {
-    transform: rotate(4deg);
+    100% {
+      transform: rotate(4deg);
+    }
   }
 }
 
