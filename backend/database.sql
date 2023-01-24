@@ -101,7 +101,7 @@ DROP TABLE IF EXISTS `trip`;
 CREATE TABLE `trip` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `departure_date` date NOT NULL,
-  `arrival_date` date NOT NULL,
+  `return_date` date NOT NULL,
   `planet` int(11) NOT NULL DEFAULT 0,
   `rocket` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
