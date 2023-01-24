@@ -77,12 +77,9 @@
 }
 
 @media screen and (min-width: 900px) {
-
-
   .navbar {
     padding: 1rem;
   }
-
 
   .burger-menu {
     display: none;
