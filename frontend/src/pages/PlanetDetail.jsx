@@ -5,8 +5,8 @@ import Planet from "../components/Planet";
 
 import styles from "../styles/PlanetDetail.module.css";
 
-import activity1 from "../assets/planetsActivities/biking.png";
-import activity2 from "../assets/planetsActivities/surfing.png";
+import activity1 from "../assets/planetsTextures/biking.png";
+import activity2 from "../assets/planetsTextures/surfing.png";
 
 function PlanetDetail() {
   return (
