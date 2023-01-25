@@ -1,0 +1,114 @@
+@import url(https://fonts.google.com/specimen/Karla);
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap%27");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font: #414141;
+  --underline: #33b0f3;
+}
+
+body {
+  font-family: "karla", sans-serif;
+  background-image: url("./assets/imagesAbout/Makemakemoon100mile2000px.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+}
+
+header h1 {
+  color: #eee;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  text-shadow: 4px 4px 8px rgba(250, 250, 250, 0.451);
+  font-family: "Orbitron", sans-serif;
+}
+
+.faqs {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.faqs .faq {
+  margin: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.938);
+  border-radius: 3px;
+  opacity: 0.8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.faqs .faq .faq-question {
+  position: relative;
+  font-size: 20px;
+  padding-right: 80px;
+  transition: all 0.4s ease;
+}
+
+.faqs .faq .faq-question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 15px;
+  background-image: url("./assets/imagesAbout/down-double-chevrons-blue-16124.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease-out;
+}
+
+.faqs .faq .faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.faqs .faq.open .faq-question {
+  margin-bottom: 20px;
+}
+
+.faqs .faq.open .faq-question::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  .flex-container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}

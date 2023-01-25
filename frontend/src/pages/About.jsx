@@ -11,7 +11,7 @@ function About() {
     <section className={styles["section-white"]}>
       <div className={styles.title}>
         <h2 className={styles["section-title"]}>The Team Orbital Code</h2>
-        <p>
+        <p className={styles.paragraph}>
           Bienvenue dans notre agence de voyage spatial vers l'univers ! une
           entreprise leader dans le domaine des voyages spatiaux et offrons nos
           nos clients l'opportunité unique d'explorer les confins de l'univers.{" "}
@@ -25,20 +25,25 @@ function About() {
         </p>
       </div>
       <div className={styles.container}>
-        <div className={styles.row}>
-          <figure className={styles["card-image"]} />
-          <div className={styles["container-1"]}>
-            <div className={styles["team-item"]}>
-              <img
-                src={CosmonautImg}
-                className={styles["team-img"]}
-                alt="cosmonaut"
-              />
-              <h3>FRANCESCO</h3>
-              <div className={styles["team-info"]} />
+        <div className={styles["container-1"]}>
+          <div className={styles["team-item"]}>
+            <img
+              src={CosmonautImg}
+              className={styles["team-img"]}
+              alt="cosmonaut"
+            />
+            <h3>FRANCESCO TURELLO</h3>
+            <div className={styles["team-info"]}>
               <p>Web developer</p>
             </div>
-            <p>Little description!</p>
+            <p>
+              Francesco is an experienced web developer and cosmonaut who its
+              its skills to create innovative solutions for space missions. He
+              excels in both areas and his passion for space exploration led him
+              to become a experienced cosmonaut. He is able to combine his two
+              passions for creating advanced technologies for exploration from
+              from space.
+            </p>
 
             <ul className={styles["team-icon"]}>
               <Link to="https://github.com/fturello">
@@ -79,7 +84,13 @@ function About() {
             <div className={styles["team-info"]}>
               <p>Web developer</p>
             </div>
-            <p>Little description !</p>
+            <p>
+              Claudia is an experienced web developer and cosmonaut who excels
+              in both areas. She is passionate about space technologies and uses
+              its development skills web to create innovative solutions for
+              missions spatial. She is also able to combine her two passions to
+              create applications for space exploration.
+            </p>
             <ul className={styles["team-icon"]}>
               <Link to="https://github.com/Clauga">
                 <img
@@ -115,7 +126,13 @@ function About() {
             <div className={styles["team-info"]}>
               <p>Web developer</p>
             </div>
-            <p>Little description !</p>
+            <p>
+              Emeline is a passionate cosmonaut and web developer talented. She
+              has great expertise in space technologies, having spent many years
+              work on space missions with a space agency international. She is
+              also skilled in web development, using his skills to create sites
+              and applications innovative for users.
+            </p>
             <ul className={styles["team-icon"]}>
               <Link to="https://github.com/EmiLef08">
                 <img
@@ -155,7 +172,14 @@ function About() {
             <div className={styles["team-info"]}>
               <p>Web developer</p>
             </div>
-            <p>Little description !</p>
+            <p>
+              Kadir is a talented web developer and cosmonaut who excels in both
+              areas. He uses his skills in web development to create innovative
+              solutions for space missions, and his passion for space
+              exploration has leads to becoming an experienced cosmonaut. He is
+              able to combine his two passions to create advanced technologies
+              for space exploration.
+            </p>
             <ul className={styles["team-icon"]}>
               <Link to="https://github.com/MrRobo1">
                 <img
@@ -195,7 +219,14 @@ function About() {
             <div className={styles["team-info"]}>
               <p>Web developer</p>
             </div>
-            <p>Little description !</p>
+            <p>
+              Pierre is an experienced web developer and cosmonaut who excels in
+              both areas. He uses his skills in web development to create
+              innovative solutions for space missions, and his passion for space
+              exploration has leads to becoming an experienced cosmonaut. He is
+              able to combine his two passions to create advanced technologies
+              for space exploration.
+            </p>
             <ul className={styles["team-icon"]}>
               <Link to="https://github.com/PierreStA">
                 <img
