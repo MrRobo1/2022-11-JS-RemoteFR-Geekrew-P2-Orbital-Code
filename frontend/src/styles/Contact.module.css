@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap%27");
 
 body {
-  background-image: url("/src/img/Capture_decran_2023-01-19_162524.png");
+  background-image: url("/assets/imgagesAbout/Capture_decran_2023-01-19_162524.png");
   font-family: "Orbitron", sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
@@ -195,3 +195,11 @@ textarea::placeholder {
     font-family: "Orbitron", sans-serif;
   }
 }
+@media screen and (max-width: 300px) {
+  .container-all {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+

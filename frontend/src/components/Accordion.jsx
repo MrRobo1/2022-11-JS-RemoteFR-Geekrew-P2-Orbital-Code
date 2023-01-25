@@ -1,19 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "../styles/Accordion.module.css";
 
 function Accordion({ faq, index, toggleFaq }) {
   return (
     <div
+      className={styles.faq}
       key={index}
-      onClick={() => toggleFaq(index, faq)}
-      onKeyDown={() => toggleFaq(index, faq)}
+      onClick={() => toggleFaq(index)}
+      onKeyDown={() => toggleFaq(index)}
       role="button"
       tabIndex="0"
     >
-      <div>
+      <div className={styles["faq-question"]}>
         {faq.question}
 
-        <div>{faq.answer}</div>
+        <div className={styles["faq-answer"]}>{faq.answer}</div>
       </div>
     </div>
   );

@@ -3,38 +3,38 @@ import styles from "../styles/Contact.module.css";
 
 function Contact() {
   return (
-    <div>
+    <div className={styles["container-all"]}>
       <h1 className={styles["h1-contact"]}>Contact us !</h1>
 
-      <form className="contact-form">
-        <div className="form-content">
-          <label htmlFor="name" className="label-contact">
+      <form className={styles["contact-form"]}>
+        <div className={styles["form-content"]}>
+          <label htmlFor="name" className={styles["label-contact"]}>
             Name and Last name :
           </label>
           <input
-            className="input-contact"
+            className={styles["input-contact"]}
             type="text"
             id="name"
             nanme="name"
             placeholder="Name and Last name here"
           />
 
-          <label htmlFor="email" className="label-contact">
+          <label htmlFor="email" className={styles["label-contact"]}>
             E-mail :
           </label>
           <input
-            className="input-contact"
+            className={styles["input-contact"]}
             type="email"
             id="email"
             nanme="email"
             placeholder="exemple@gmail.com"
           />
 
-          <label htmlFor="phone" className="label-contact">
+          <label htmlFor="phone" className={styles["label-contact"]}>
             Phone number:
           </label>
           <input
-            className="input-contact"
+            className={styles["input-contact"]}
             type="text"
             id="phone"
             nanme="phone"
@@ -64,12 +64,12 @@ function Contact() {
             name="message"
           />
 
-          <label className="label-contact">
+          <label className={styles["label-contact"]}>
             <input type="checkbox" /> By checking this box, I agree to receive
             receive information on the different offers available.
           </label>
 
-          <div className={["button-contact"]}>
+          <div className={styles["button-contact"]}>
             <span />
             <span />
             <span />
