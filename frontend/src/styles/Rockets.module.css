@@ -29,6 +29,7 @@
 }
 
 .Rockets-list {
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -38,12 +39,11 @@
 }
 
 .Rockets-1 {
-  border: 10px solid white;
-  background-color: lightgray;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
 }
 
 .Rockets-1-name {
@@ -58,13 +58,4 @@ img.Rockets-1-img {
   margin: 0.8rem;
   height: 2rem;
   width: 3rem;
-}
-
-button.modal-toggle {
-  background-color: turquoise;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  border: none;
-  margin: 0.8rem;
 }

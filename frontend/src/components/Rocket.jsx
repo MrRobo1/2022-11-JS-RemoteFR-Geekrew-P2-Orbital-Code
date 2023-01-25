@@ -20,10 +20,12 @@ function Rocket() {
 
       <style jsx="true">{`
         .Rockets-1 {
+          width: 80%;
           height: auto;
           display: flex;
-          justify-content: center;
+          flex-direction: column;
           align-items: center;
+          margin: 1rem;
         }
 
         button.modal-toggle {
