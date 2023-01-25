@@ -30,6 +30,19 @@
 .planet {
   display: flex;
   align-content: center;
+  justify-content: center;
+}
+
+.planet-detail {
+  margin: 0;
+  height: 70vmin;
+  width: 70vmin;
+}
+
+.planet-detail:after {
+  margin: 0;
+  height: 70vmin;
+  width: 70vmin;
 }
 
 .small-cards {

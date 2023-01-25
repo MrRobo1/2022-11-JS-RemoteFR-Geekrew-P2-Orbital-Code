@@ -42,13 +42,6 @@ function PlanetDetail() {
           Reservation
         </Link>
       </div>
-      {/* <Planet planetDetail /> */}
-      {/* <h1 className={styles["planet-composition-title"]}>Composition</h1>
-      <p className={styles["planet-composition"]}>
-        Lorem Ipsum is simply dummy text of the printing <br /> and typesetting
-        industry. Lorem Ipsum has been the <br />
-        industry's standard dummy text ever.
-      </p> */}
       <h1 className={styles["planet-hotel-title"]}>Hotel</h1>
       <img src={activity2} alt="biking" className={styles.hotel} />
       <h1 className={styles["planet-activities-title"]}>Activities</h1>

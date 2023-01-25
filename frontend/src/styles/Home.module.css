@@ -8,6 +8,7 @@
 
 .title {
   align-self: center;
+  text-align: center;
   margin-top: 2.5rem;
   font-size: 2.8rem;
   letter-spacing: 0.10em;
@@ -18,6 +19,7 @@
 
 .slogan {
   align-self: center;
+  text-align: center;
   color: #6419dc;
   margin-top: 1rem;
   z-index: 200;
