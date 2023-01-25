@@ -5,4 +5,5 @@ class RocketManager extends AbstractManager {
     super({ table: "rocket" });
   }
 }
+
 module.exports = RocketManager;

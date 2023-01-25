@@ -11,6 +11,7 @@ router.get("/planets", planetControllers.browse);
 router.get("/planet/:id", planetControllers.read);
 
 router.get("/rockets", rocketControllers.browse);
+router.get("/rocket/:id", rocketControllers.read);
 
 router.get("/trips", tripControllers.browse);
 router.post("/trips", tripControllers.create);
