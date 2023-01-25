@@ -100,10 +100,15 @@ DROP TABLE IF EXISTS `trip`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `trip` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone_number` varchar(255) NOT NULL,
   `departure_date` date NOT NULL,
   `return_date` date NOT NULL,
   `planet` int(11) NOT NULL DEFAULT 0,
   `rocket` int(11) NOT NULL DEFAULT 0,
+  `price` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `trip_FK` (`planet`),
   KEY `trip_FK_1` (`rocket`),

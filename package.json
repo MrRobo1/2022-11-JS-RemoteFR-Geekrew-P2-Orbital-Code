@@ -18,10 +18,5 @@
   "devDependencies": {
     "concurrently": "^7.0.0",
     "husky": "^7.0.0"
-  },
-  "dependencies": {
-    "react-carousel3": "^1.0.0",
-    "react-tsparticles": "^2.8.0",
-    "tsparticles": "^2.8.0"
   }
 }
