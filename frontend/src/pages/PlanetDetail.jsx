@@ -4,8 +4,8 @@ import React from "react";
 
 import styles from "../styles/PlanetDetail.module.css";
 
-import activity1 from "../assets/planetsActivities/biking.png";
-import activity2 from "../assets/planetsActivities/surfing.png";
+import activity1 from "../assets/biking.png";
+import activity2 from "../assets/surfing.png";
 
 function PlanetDetail() {
   return (
