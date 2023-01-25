@@ -74,6 +74,25 @@
   }
 }
 
+.planet-detail {
+  margin-top: 5rem;
+  margin-bottom: 18rem;
+  margin-right: 22.5rem;
+  animation: none;
+}
+
+.planet-detail:after {
+  height: 70vmin;
+  width: 70vmin;
+  border-radius: 100vw;
+  will-change: transform;
+  margin: 0 auto;
+}
+
+.no-planet-name {
+  display: none;
+}
+
 .planet-name {
   box-shadow: inset 0 0 0 0 #54b3d6;
   color: #fff;

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import styles from "../styles/Planet.module.css";
 
-function Planet({ planetDetail }) {
+function Planet({ isPlanetDetail, isPlanetName }) {
   const navigate = useNavigate();
   const onPressPlanet = () => {
     const path = `/planetDetail`;
@@ -17,14 +17,16 @@ function Planet({ planetDetail }) {
     <>
       <div
         className={`${styles.Planet} ${
-          planetDetail ? styles["planet-detail"] : ""
+          isPlanetDetail ? styles["planet-detail"] : ""
         }`}
       />
       <button
         type="button"
         onClick={onPressPlanet}
         onKeyDown={onPressPlanet}
-        className={styles["planet-name"]}
+        className={`${styles["planet-name"]} ${
+          isPlanetName ? styles["no-planet-name"] : ""
+        }`}
       >
         PlanetName
       </button>
@@ -33,7 +35,8 @@ function Planet({ planetDetail }) {
 }
 
 Planet.propTypes = {
-  planetDetail: PropTypes.string.isRequired,
+  isPlanetDetail: PropTypes.string.isRequired,
+  isPlanetName: PropTypes.string.isRequired,
 };
 
 export default Planet;

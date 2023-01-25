@@ -5,43 +5,65 @@
 }
 
 .title {
-  background-color: rgba(255, 255, 255, 0.06);
-  margin: 3rem;
+  background-color: rgba(255, 255, 255, 0.03);
   border-radius: 3rem;
-
+  margin: 1.5rem;
 }
 
 .planet-name {
   text-align: center;
   margin-top: 2.5rem;
-  color: rgb(255, 135, 135);
+  color: #03e8f4ca;
   font-size: 3rem;
 }
 
 .planet-details {
-  margin: 2rem;
+  margin: 0 2rem;
+  margin-bottom: 2rem;
   padding: 1.5rem;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.810);
   font-size: 1.4rem;
   text-align: center;
   line-height: 1.7em;
 }
 
+.planet {
+  display: flex;
+  align-content: center;
+}
+
 .small-cards {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10rem;
+  margin-top: 3rem;
 }
 
 .planet-type {
   text-align: center;
-  font-weight: 600;
-  background: rgb(206, 206, 206);
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.810);
   display: inline-block;
   height: 4em;
   width: 12em;
   padding-top: 1.3rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
+  border-radius: 5em;
+  letter-spacing: 0.15em;
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+  transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+}
+
+.planet-climate {
+  text-align: center;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.810);
+  display: inline-block;
+  height: 4em;
+  width: 12em;
+  padding-top: 1.3rem;
+  margin-left: 1.5rem;
   border-radius: 5em;
   letter-spacing: 0.15em;
   box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
@@ -50,8 +72,9 @@
 
 .planet-diameter {
   text-align: center;
-  font-weight: 600;
-  background: rgb(206, 206, 206);
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.810);
   display: inline-block;
   height: 4em;
   width: 12em;
@@ -65,8 +88,9 @@
 
 .planet-distance {
   text-align: center;
-  font-weight: 600;
-  background: rgb(206, 206, 206);
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.810);
   display: inline-block;
   height: 4em;
   width: 12em;
@@ -80,8 +104,9 @@
 
 .planet-composition {
   text-align: center;
-  font-weight: 600;
-  background: rgb(206, 206, 206);
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.810);
   display: inline-block;
   height: 4em;
   width: 12em;
@@ -93,53 +118,164 @@
   transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
 }
 
-.planet-type:hover {
+.planet-type:hover,
+.planet-climate:hover,
+.planet-diameter:hover,
+.planet-distance:hover,
+.planet-composition:hover {
   box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
-  color: #303030;
+  color: #838383;
 }
 
-.planet-climate-title {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 2.5rem;
-  margin-right: 2rem;
-  color: #f7941f;
-}
-
-.planet-climate {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 25rem;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.planet-activities-title {
+.reservation-button {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  margin-right: 1rem;
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 3rem;
 }
 
-.activity {
-  display: flex;
-  align-self: center;
-  margin-bottom: 10rem;
-  height: 30%;
-  width: 50%;
+.reservation-button a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  width: auto;
+}
+
+.reservation-button a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.reservation-button a span {
+  position: absolute;
+  display: block;
+}
+
+.reservation-button a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.reservation-button a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.reservation-button a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.reservation-button a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
 
 .planet-hotel-title {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-right: 1rem;
   color: #fff;
   font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hotel {
+  display: flex;
+  align-self: center;
+  margin-bottom: 5rem;
+  height: 30%;
+  width: 75%;
+}
+
+.planet-activities-title {
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.activity {
+  display: flex;
+  align-self: center;
+  margin-bottom: 2rem;
+  height: 30%;
+  width: 75%;
 }
