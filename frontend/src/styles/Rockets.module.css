@@ -29,7 +29,7 @@
 }
 
 .Rockets-list {
-  height: 300vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -56,7 +56,8 @@
 
 img.Rockets-1-img {
   margin: 0.8rem;
-  size: 30%;
+  height: 2rem;
+  width: 3rem;
 }
 
 button.modal-toggle {

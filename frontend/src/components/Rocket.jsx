@@ -19,15 +19,17 @@ function Rocket() {
       </div>
 
       <style jsx="true">{`
-        .Rockets-1-name {
-          height: 100vh;
+        .Rockets-1 {
+          height: auto;
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
         button.modal-toggle {
-          background-color: turquoise;
+          color: rgb(3, 151, 145);
+          font-weight: 450;
+          background-color: transparent;
           cursor: pointer;
           padding: 1rem 2rem;
           text-transform: uppercase;

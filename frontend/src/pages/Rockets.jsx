@@ -1,5 +1,5 @@
 import React from "react";
-import Rocket from "@components/Rocket";
+import Rocket from "../components/Rocket";
 
 import styles from "../styles/Rockets.module.css";
 

@@ -29,9 +29,9 @@ function Modal({ isShowing, hide }) {
               position: fixed;
               top: 0;
               left: 0;
-              width: 100vw;
-              height: 100vh;
-              z-index: 1040;
+              width: 100%;
+              height: 100%;
+              z-index: 250;
               background-color: rgba(0, 0, 0, 0.5);
             }
 
@@ -51,9 +51,10 @@ function Modal({ isShowing, hide }) {
 
             .modal {
               z-index: 100;
-              background: #fff;
+              background: rgba(255, 255, 255, 0.7);
               position: relative;
               margin: auto;
+              border: 0.2rem solid rgba(3, 151, 145, 1);
               border-radius: 5px;
               max-width: 500px;
               width: 80%;
@@ -66,10 +67,17 @@ function Modal({ isShowing, hide }) {
               align-items: center;
             }
 
+            .modal-name {
+              align-content: center;
+              text-align: center;
+              color: rgb(3, 151, 145);
+              font-size: large;
+            }
+
             .modal-close-button {
               font-size: 1.4rem;
               font-weight: 700;
-              color: #000;
+              color: rgba(3, 151, 145, 1);
               cursor: pointer;
               border: none;
               background: transparent;
