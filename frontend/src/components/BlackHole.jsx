@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import styles from "../styles/BlackHole.modules.css";
+import styles from "../styles/BlackHole.module.css";
 
 function BlackHole() {
   const navigate = useNavigate();
@@ -11,6 +11,7 @@ function BlackHole() {
       navigate(path);
     }, 100);
   };
+
   return (
     <>
       <b className={styles.b} />
