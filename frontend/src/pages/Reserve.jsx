@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "../styles/Reserve.module.css";
 
 function Reserve() {
+  const [price, setPrice] = useState(0);
   const [checkbox1, setCheckbox1] = useState(false);
   const [checkbox2, setCheckbox2] = useState(false);
   const [checkbox3, setCheckbox3] = useState(false);
@@ -13,47 +14,50 @@ function Reserve() {
       setCheckbox1(!checkbox1);
       setCheckbox2(false);
       setCheckbox3(false);
+      setPrice(0);
     }
     if (name === "checkbox2") {
       setCheckbox1(false);
       setCheckbox2(!checkbox2);
       setCheckbox3(false);
+      setPrice(1000);
     }
     if (name === "checkbox3") {
       setCheckbox1(false);
       setCheckbox2(false);
       setCheckbox3(!checkbox3);
+      setPrice(3000);
     }
   };
 
   return (
     <div className={styles.Container}>
       <div className={styles["Reserv-box"]}>
-        <h2>Réservation</h2>
+        <h2>Reservation</h2>
         <form>
           <div className={styles["user-box"]}>
             <input type="text" name="firstName" required="" />
-            <label htmlFor="firstName">Prénom</label>
+            <label htmlFor="firstName">First Name</label>
           </div>
           <div className={styles["user-box"]}>
             <input type="text" name="lastName" required="" />
-            <label htmlFor="lastName">Nom</label>
+            <label htmlFor="lastName">Last Name</label>
           </div>
           <div className={styles["user-box"]}>
             <input type="text" name="mail" required="" />
-            <label htmlFor="mail">E-mail</label>
+            <label htmlFor="mail">Mail</label>
           </div>
           <div className={styles["user-box"]}>
             <input type="text" name="phone" required="" />
-            <label htmlFor="phone">Téléphone</label>
+            <label htmlFor="phone">Phone</label>
           </div>
           <div className={styles["user-box"]}>
             <input type="date" name="depart" required="" />
-            <label htmlFor="depart">Départ</label>
+            <label htmlFor="depart">Departure</label>
           </div>
           <div className={styles["user-box"]}>
             <input type="date" name="retour" required="" />
-            <label htmlFor="retour">Retour</label>
+            <label htmlFor="retour">Return</label>
           </div>
           <div className={styles.ChoiceRock}>
             <label>
@@ -63,7 +67,7 @@ function Reserve() {
                 checked={checkbox1}
                 onChange={handleCheckboxChange}
               />
-              Navette Crew Dragon
+              Navette Crew Dragon*
             </label>
             <br />
             <label>
@@ -73,7 +77,7 @@ function Reserve() {
                 checked={checkbox2}
                 onChange={handleCheckboxChange}
               />
-              USS Enterprise
+              Speeder3000*
             </label>
             <br />
             <label>
@@ -83,14 +87,15 @@ function Reserve() {
                 checked={checkbox3}
                 onChange={handleCheckboxChange}
               />
-              StarSpeeder 3000
+              Uss Enterprise*
             </label>
           </div>
           <div className={styles.BtnRocket}>
             <Link to="/">
-              <i>En savoir plus sur les moyens de transport</i>
+              <i>*Find out more about means of transport</i>
             </Link>
           </div>
+          <p>Supplement Rocket: {price}</p>
           <Link to="/recap">
             <span />
             <span />

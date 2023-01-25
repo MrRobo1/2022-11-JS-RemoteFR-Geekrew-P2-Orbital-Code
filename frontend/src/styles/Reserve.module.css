@@ -77,6 +77,12 @@ input {
   display: flex;
 }
 
+.Reserv-box p {
+  color: #03e9f4;
+  margin-top: 3rem;
+  text-align: center;
+}
+
 .Reserv-box form a {
   position: relative;
   display: inline-block;
