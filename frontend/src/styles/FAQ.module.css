@@ -1,24 +1,23 @@
-@import url(https://fonts.google.com/specimen/Karla);
+@import url("https://fonts.google.com/specimen/Karla");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap%27");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 :root {
-  --font: #414141;
-  --underline: #33b0f3;
-}
+	--font: #414141;
+	--underline: #33b0f3;
+  }
 
 body {
-  font-family: "karla", sans-serif;
-  background-image: url("./assets/imagesAbout/Makemakemoon100mile2000px.jpg");
+  font-family: 'karla', sans-serif;
+  background-image: url("./assets/Makemakemoon100mile2000px.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 150%;
   background-attachment: fixed;
 }
-
 header {
   display: flex;
   justify-content: center;

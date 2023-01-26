@@ -1,5 +1,5 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "../styles/About.module.css";
 import CosmonautImg from "../assets/imagesAbout/Cosmonaut.png";
 import Linkedin from "../assets/logos/linkedin.png";
@@ -12,16 +12,14 @@ function About() {
       <div className={styles.title}>
         <h2 className={styles["section-title"]}>The Team Orbital Code</h2>
         <p className={styles.paragraph}>
-          Bienvenue dans notre agence de voyage spatial vers l'univers ! une
-          entreprise leader dans le domaine des voyages spatiaux et offrons nos
-          nos clients l'opportunité unique d'explorer les confins de l'univers.{" "}
-          <br />
-          Nous offrons une grande variété de services, des vols suborbitaux aux
-          aux missions scientifiques et technologiques, et notre flotte d'engins
-          spatiaux à la pointe de la technologie garantit une expérience sûre et
-          confortable. <br />
-          Si vous rêvez de voir les étoiles de près et de découvrir les mystères
-          du cosmos, notre agence de voyage spatial est faite pour vous !
+          Get ready to launch! The Orbital Code team, the most innovative team
+          of young developers in the galaxy, they are in charge of building the
+          "Galaxy Gateways" website, a place where you can navigate the space
+          ease and style. <br />
+          Our crew of talented youngsters is working at full speed to create an
+          out-of-this-world user experience, so stay tuned for our developments
+          and get ready to travel through the galaxy portals with "Galaxy
+          Gateways"! <br />
         </p>
       </div>
       <div className={styles.container}>
@@ -37,39 +35,38 @@ function About() {
               <p>Web developer</p>
             </div>
             <p>
-              Francesco is an experienced web developer and cosmonaut who its
-              its skills to create innovative solutions for space missions. He
-              excels in both areas and his passion for space exploration led him
-              to become a experienced cosmonaut. He is able to combine his two
-              passions for creating advanced technologies for exploration from
-              from space.
+              Francesco is a talented web developer and cosmonaut who excels in both
+              areas. He uses his skills in web development to create innovative
+              solutions for space missions, and his passion for space
+              exploration has leads to becoming an experienced cosmonaut. He is
+              able to combine his two passions to create advanced technologies.
             </p>
 
             <ul className={styles["team-icon"]}>
-              <Link to="https://github.com/fturello">
+              <a href="https://github.com/fturello">
                 <img
                   src={gitHubImg}
                   alt="github"
                   width="50"
                   className={styles.github}
                 />
-              </Link>
-              <Link to="https://www.linkedin.com/in/francescoturello/">
+              </a>
+              <a href="https://www.linkedin.com/in/francescoturello/">
                 <img
                   src={Linkedin}
                   alt="linkedin"
                   width="50"
                   className={styles.linkedin}
                 />
-              </Link>
-              <Link to="https://github.com/">
+              </a>
+              <a href="https://github.com/">
                 <img
                   src={email}
                   alt="email"
                   width="50"
                   className={styles.email}
                 />
-              </Link>
+              </a>
             </ul>
           </div>
         </div>
@@ -85,37 +82,38 @@ function About() {
               <p>Web developer</p>
             </div>
             <p>
-              Claudia is an experienced web developer and cosmonaut who excels
-              in both areas. She is passionate about space technologies and uses
-              its development skills web to create innovative solutions for
-              missions spatial. She is also able to combine her two passions to
-              create applications for space exploration.
+            Claudia is a passionate cosmonaut and web developer talented. She
+              has great expertise in space technologies, having spent many years
+              work on space missions with a space agency international. She is
+              also skilled in web development, using her skills to create sites
+              and applications innovative for users, she is able to combine
+              passions.
             </p>
             <ul className={styles["team-icon"]}>
-              <Link to="https://github.com/Clauga">
+              <a href="https://github.com/Clauga">
                 <img
                   src={gitHubImg}
                   alt="github"
                   width="50"
                   className={styles.github}
                 />
-              </Link>
-              <Link to="https://www.linkedin.com/in/claudia-guerrero-dev/">
+              </a>
+              <a href="https://www.linkedin.com/in/claudia-guerrero-dev/">
                 <img
                   src={Linkedin}
                   alt="linkedin"
                   width="50"
                   className={styles.linkedin}
                 />
-              </Link>
-              <Link to="https://github.com/">
+              </a>
+              <a href="https://github.com/">
                 <img
                   src={email}
                   alt="email"
                   width="50"
                   className={styles.email}
                 />
-              </Link>
+              </a>
             </ul>
           </div>
         </div>
@@ -130,34 +128,35 @@ function About() {
               Emeline is a passionate cosmonaut and web developer talented. She
               has great expertise in space technologies, having spent many years
               work on space missions with a space agency international. She is
-              also skilled in web development, using his skills to create sites
-              and applications innovative for users.
+              also skilled in web development, using her skills to create sites
+              and applications innovative for users, she is able to combine
+              passions.
             </p>
             <ul className={styles["team-icon"]}>
-              <Link to="https://github.com/EmiLef08">
+              <a href="https://github.com/EmiLef08">
                 <img
                   src={gitHubImg}
                   alt="github"
                   width="50"
                   className={styles.github}
                 />
-              </Link>
-              <Link to="https://www.linkedin.com/in/emeline-lefebvre-9147b0167/">
+              </a>
+              <a href="https://www.linkedin.com/in/emeline-lefebvre-9147b0167/">
                 <img
                   src={Linkedin}
                   alt="linkedin"
                   width="50"
                   className={styles.linkedin}
                 />
-              </Link>
-              <Link to="https://github.com/">
+              </a>
+              <a href="https://github.com/">
                 <img
                   src={email}
                   alt="email"
                   width="50"
                   className={styles.email}
                 />
-              </Link>
+              </a>
             </ul>
           </div>
         </div>
@@ -177,34 +176,33 @@ function About() {
               areas. He uses his skills in web development to create innovative
               solutions for space missions, and his passion for space
               exploration has leads to becoming an experienced cosmonaut. He is
-              able to combine his two passions to create advanced technologies
-              for space exploration.
+              able to combine his two passions to create advanced technologies.
             </p>
             <ul className={styles["team-icon"]}>
-              <Link to="https://github.com/MrRobo1">
+              <a href="https://github.com/MrRobo1">
                 <img
                   src={gitHubImg}
                   alt="github"
                   width="50"
                   className={styles.github}
                 />
-              </Link>
-              <Link to="https://www.linkedin.com/in/kadiryilmaz22/">
+              </a>
+              <a href="https://www.linkedin.com/in/kadiryilmaz22/">
                 <img
                   src={Linkedin}
                   alt="linkedin"
                   width="50"
                   className={styles.linkedin}
                 />
-              </Link>
-              <Link to="https://github.com/">
+              </a>
+              <a href="https://github.com/">
                 <img
                   src={email}
                   alt="email"
                   width="50"
                   className={styles.email}
                 />
-              </Link>
+              </a>
             </ul>
           </div>
         </div>
@@ -224,34 +222,33 @@ function About() {
               both areas. He uses his skills in web development to create
               innovative solutions for space missions, and his passion for space
               exploration has leads to becoming an experienced cosmonaut. He is
-              able to combine his two passions to create advanced technologies
-              for space exploration.
+              able to combine his two passions to create advanced technologies.
             </p>
             <ul className={styles["team-icon"]}>
-              <Link to="https://github.com/PierreStA">
+              <a href="https://github.com/PierreStA">
                 <img
                   src={gitHubImg}
                   alt="github"
                   width="50"
                   className={styles.github}
                 />
-              </Link>
-              <Link to="https://www.linkedin.com/in/p-saintaubin/">
+              </a>
+              <a href="https://www.linkedin.com/in/p-saintaubin/">
                 <img
                   src={Linkedin}
                   alt="linkedin"
                   width="50"
                   className={styles.linkedin}
                 />
-              </Link>
-              <Link to="https://github.com/">
+              </a>
+              <a href="https://github.com/">
                 <img
                   src={email}
                   alt="email"
                   width="50"
                   className={styles.email}
                 />
-              </Link>
+              </a>
             </ul>
           </div>
         </div>

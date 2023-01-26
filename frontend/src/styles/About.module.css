@@ -21,23 +21,103 @@ body {
   font-size: 100%;
   text-align: center;
   margin: 2rem;
+  
 }
+
 .paragraph {
   display: flex;
   flex-direction: column;
   text-align: center;
   overflow-wrap: break-word;
+  font-size: 1.1rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 0;       
+
+}
+
+.paragraph::before   {       
+  content: ' ';       
+  display: block;            
+  font-weight: bold;       
+  font-size: 2.3rem;       
+  color: gainsboro;       
+  border-bottom: 4px dotted gainsboro;       
+  width: 500px;       
+  text-transform: uppercase;       
+  letter-spacing: 5px;        
+  text-align: center;       
+  margin: 4px auto 10px auto;      
+  padding-bottom: 4px; 
+  }
+.paragraph::after   {       
+  content: ' ';       
+  display: block;       
+  border-bottom: 4px dotted rgb(224, 211, 224);       
+  width: 100px;       
+  margin: 4px auto 10px auto;       
+  padding: 4px 20px; 
 }
 .section-title {
   font-family: "Orbitron", sans-serif;
   font-size: 3rem;
+  animation: lights 5s 750ms linear infinite;
 }
+  @keyframes lights {
+    0% {
+      color: hsl(240, 11%, 95%);
+      text-shadow:
+        0 0 1em hsla(186, 100%, 50%, 0.2),
+        0 0 0.125em hsla(228, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(240, 11%, 95%);
+      text-shadow:
+        0 0 1em hsla(196, 100%, 50%, 0.5),
+        0 0 0.125em hsla(219, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(231, 24%, 94%);
+      text-shadow:
+        0 0 1em hsla(194, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 43%, 97%);
+      text-shadow:
+        0 0 1em hsla(202, 100%, 50%, 0.5),
+        0 0 0.125em hsla(208, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(240, 17%, 98%);
+      text-shadow:
+        0 0 1em hsla(187, 100%, 50%, 0.2),
+        0 0 0.125em hsla(228, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+
 .section-white {
   padding: 70px 0;
 }
 .container {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   
 }
 .container > * {

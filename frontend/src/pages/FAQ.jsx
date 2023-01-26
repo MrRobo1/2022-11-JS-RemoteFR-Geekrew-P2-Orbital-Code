@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import React, { useState } from "react";
 import Accordion from "../components/Accordion";
 import HeaderFaq from "../components/HeaderFaq";
