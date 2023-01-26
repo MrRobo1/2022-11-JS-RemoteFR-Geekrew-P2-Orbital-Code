@@ -7,15 +7,17 @@ function Rocket() {
   const { isShowing, toggle } = useModal();
   return (
     <>
-      <div className={styles["Rockets-list"]}>
-        <div className={styles["Rockets-1"]}>
-          <h2 className={styles["Rockets-1-name"]}>Rocket 1</h2>
-          <img className="Rockets-1-img" src="" alt="Rocket-1" />
-          <button type="button" className="modal-toggle" onClick={toggle}>
-            Show more
-          </button>
-          <Modal isShowing={isShowing} hide={toggle} />
-        </div>
+      <div className={styles["Rockets-1"]}>
+        <h2 className={styles["Rockets-1-name"]}>Rocket 1</h2>
+        <img className={styles["Rockets-1-img"]} src="" alt="Rocket-1" />
+        <button type="button" className="modal-toggle" onClick={toggle}>
+          Show more
+          <span />
+          <span />
+          <span />
+          <span />
+        </button>
+        <Modal isShowing={isShowing} hide={toggle} />
       </div>
 
       <style jsx="true">{`
@@ -29,6 +31,9 @@ function Rocket() {
         }
 
         button.modal-toggle {
+          font-family: "Orbitron", sans-serif;
+          font-size: large;
+          letter-spacing: 0.15rem;
           color: rgb(3, 151, 145);
           font-weight: 450;
           background-color: transparent;
@@ -36,6 +41,14 @@ function Rocket() {
           padding: 1rem 2rem;
           text-transform: uppercase;
           border: none;
+        }
+
+        button.modal-toggle:hover {
+          background: rgb(3, 151, 145);
+          color: rgba(255, 255, 255, 0.816);
+          border-radius: 5px;
+          box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+            0 0 100px #03e9f4;
         }
       `}</style>
     </>

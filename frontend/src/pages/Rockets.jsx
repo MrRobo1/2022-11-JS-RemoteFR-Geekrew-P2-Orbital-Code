@@ -10,12 +10,17 @@ function Rockets() {
       <div className={styles["Rockets-header"]}>
         <h1 className={styles["Rockets-title"]}> Rockets</h1>
         <p className={styles["Rockets-desc"]}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque alias,
-          nihil numquam est ab libero totam perspiciatis necessitatibus incidunt
-          magnam natus enim aperiam at, fugiat quo similique sint, rem ut.
+          What could be better than being able to choose the rocket that will
+          take you to your destination? At Galaxy Getaways, we offer our
+          travelers the opportunity to choose the mode of transportation that
+          best suits their needs. On this page you will find the selection made
+          by our team to bring you the best of comfort and safety in your
+          journey to the holiday of your dreams.
         </p>
       </div>
-      <div>
+      <div className={styles["Rockets-list"]}>
+        <Rocket />
+        <Rocket />
         <Rocket />
       </div>
     </div>

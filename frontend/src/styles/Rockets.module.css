@@ -1,3 +1,6 @@
+@import url("https://fonts.google.com/specimen/Karla%22");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap%27%22");
+
 .container {
   display: flex;
   height: 60rem;
@@ -13,29 +16,37 @@
   flex-direction: column;
   align-items: center;
   margin: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(129, 128, 128, 0.47);
+  border-radius: 8px 8px;
+  box-shadow: 0 15px 25px rgb(241 235 235 / 26%);
 }
 
 .Rockets-title {
   color: white;
-  font: "Ubuntu";
-  font-size: xx-large;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4.5rem;
+  margin: 2rem;
 }
 
 .Rockets-desc {
   color: white;
-  font: "Ubuntu";
-  font-size: medium;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
   text-align: center;
+  line-height: 1.5rem;
+  margin-top: 0rem;
+  margin: 1.5rem;
 }
 
 .Rockets-list {
-  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 1.5rem;
+  margin: 3rem;
 }
 
 .Rockets-1 {
@@ -44,18 +55,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1.5rem;
 }
 
 .Rockets-1-name {
   color: white;
-  font: "Ubuntu";
-  font-size: large;
+  font-family: 'Orbitron', sans-serif;
+  font-size: x-large;
+  letter-spacing: 0.2rem;
   text-align: center;
   margin: 0.8rem;
 }
 
 img.Rockets-1-img {
-  margin: 0.8rem;
-  height: 2rem;
-  width: 3rem;
+  margin: 2rem;
+  height: 16rem;
+  width: 24rem;
 }
