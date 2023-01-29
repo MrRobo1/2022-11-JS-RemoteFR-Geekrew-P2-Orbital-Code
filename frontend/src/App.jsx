@@ -11,6 +11,7 @@ import Reserve from "./pages/Reserve";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
+import AfterContact from "./pages/AfterContact";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/about" element={<About />} />
+        <Route path="/aftercontact" element={<AfterContact />} />
       </Routes>
       <Footer />
     </>
