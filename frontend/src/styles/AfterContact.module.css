@@ -2,24 +2,24 @@
 
 .Container {
     font-family: 'Karla', sans-serif;
+    font-size: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: auto;
+    margin-bottom: 2rem;
   }
   
   .Reserv-box a {
     border: none;
     margin: 0;
     padding: 0;
-    width: auto;
     overflow: visible;
     background: transparent;
     color: inherit;
     font: inherit;
     line-height: normal;
   }
-  
+ 
   .message-box {
     width: 40%;
     padding: 40px;
@@ -36,4 +36,11 @@
     text-align: center;
   }
   
- 
+  @media screen and (max-width: 1000px) {
+  .message-box {
+    width: 60%;
+  }
+  .Container {
+    font-size: 0.7rem;
+  }
+ }

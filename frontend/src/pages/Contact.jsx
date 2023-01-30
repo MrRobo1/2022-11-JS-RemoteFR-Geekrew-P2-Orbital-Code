@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "../styles/Contact.module.css";
 
 function Contact() {
@@ -68,14 +69,15 @@ function Contact() {
             <input type="checkbox" /> By checking this box, I agree to receive
             receive information on the different offers available.
           </label>
-
-          <div className={styles["button-contact"]}>
-            <span />
-            <span />
-            <span />
-            <span />
-            Send
-          </div>
+          <Link to="/aftercontact">
+            <div className={styles["button-contact"]}>
+              <span />
+              <span />
+              <span />
+              <span />
+              Send
+            </div>
+          </Link>
         </div>
       </form>
     </div>
