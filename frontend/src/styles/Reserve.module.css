@@ -5,7 +5,7 @@
   background-image: url("/frontend/src/assets/Pierre_A_cosmonaut_in_space_suit_view_from_space_with_deep_spac_0991692d-70a4-4885-8b2c-0798c68ab196.png");
 }
 
-.Reserv-box a {
+.Reserv-box button {
   border: none;
   margin: 0;
   padding: 0;
@@ -20,6 +20,7 @@
 .Reserv-box {
   width: 300px;
   padding: 40px;
+  margin-bottom: 3rem;
   background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
@@ -77,7 +78,13 @@ input {
   display: flex;
 }
 
-.Reserv-box form a {
+.Reserv-box p {
+  color: #03e9f4;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.Reserv-box form button {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -91,7 +98,7 @@ input {
   letter-spacing: 4px;
 }
 
-.Reserv-box a:hover {
+.Reserv-box button:hover {
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
@@ -99,12 +106,12 @@ input {
     0 0 100px #03e9f4;
 }
 
-.Reserv-box a span {
+.Reserv-box button span {
   position: absolute;
   display: block;
 }
 
-.Reserv-box a span:nth-child(1) {
+.Reserv-box button span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -123,7 +130,7 @@ input {
   }
 }
 
-.Reserv-box a span:nth-child(2) {
+.Reserv-box button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -143,7 +150,7 @@ input {
   }
 }
 
-.Reserv-box a span:nth-child(3) {
+.Reserv-box button span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -163,7 +170,7 @@ input {
   }
 }
 
-.Reserv-box a span:nth-child(4) {
+.Reserv-box button span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -184,6 +191,7 @@ input {
 }
 
 i {
+  color: #03e9f4;
   font-size: 10px;
 }
 
