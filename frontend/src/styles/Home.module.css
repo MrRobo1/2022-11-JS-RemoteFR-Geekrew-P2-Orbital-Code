@@ -191,10 +191,10 @@
 .earth {
   align-self: center;
   margin-top: 5rem;
-  margin-bottom: -3rem;
   width: 80%;
   z-index: 200;
   filter: drop-shadow(0px 0px 30px rgba(5, 0, 165, 0.2));
+  height: 100%;
 }
 
 @media screen and (min-width: 900px) {
@@ -208,9 +208,5 @@
 
   .slogan {
     font-size: 2rem;
-  }
-
-  .earth {
-    margin-bottom: -1rem;
   }
 }

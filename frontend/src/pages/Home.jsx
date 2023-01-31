@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import styles from "../styles/Home.module.css";
 import BackgroundChanger from "../components/BackgroundChanger";
 import earthImg from "../assets/earth.png";
+import launch from "../assets/launch.mp3";
 
 function Home() {
   const [launchRocket, setLaunchRocket] = useState(false);
   const [hideThings, setHideThings] = useState(false);
   const navigate = useNavigate();
+  const audioRef = useRef(null);
 
   const redirectPath = () => {
     window.location.reload();
     setHideThings(true);
     setLaunchRocket(!launchRocket);
+    audioRef.current.play();
     const path = `/planets`;
     setTimeout(() => {
       navigate(path);
@@ -77,6 +80,9 @@ function Home() {
         </svg>
         <span>Launch</span>
       </button>
+      <audio ref={audioRef} src={launch}>
+        <track kind="captions" />
+      </audio>
       <img src={earthImg} alt="earth" className={styles.earth} />
     </div>
   );
