@@ -80,7 +80,7 @@ function PlanetDetail() {
         </p>
       </div>
       <div className={styles["reservation-button"]}>
-        <Link to="/">
+        <Link to="/reservation">
           <span />
           <span />
           <span />
