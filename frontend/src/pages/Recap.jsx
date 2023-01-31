@@ -19,7 +19,7 @@ function Recap() {
         <h1>Summary of your trip</h1>
         {trips.slice(-1).map((trip) => (
           <>
-            <p>
+            <p className={styles.Tripp}>
               {trip.firstName}, {trip.lastName} here are your dates:
             </p>
             <table>
@@ -34,7 +34,7 @@ function Recap() {
                 </tr>
               </tbody>
             </table>
-            <p>
+            <p className={styles.Pricep}>
               Price: <br /> <br /> Rocket {trip.price} GAX <br />
               + <br />
               Trip 4999.99 GAX <br />

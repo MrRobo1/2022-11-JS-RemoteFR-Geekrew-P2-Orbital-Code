@@ -31,9 +31,9 @@
   border-radius: 10px;
 }
 
-.BackRecap h1
-td
-p {
+.BackRecap h1,
+td,
+.Tripp, .Pricep {
   color: #fff;
   margin-top: 3rem;
   margin-bottom: 2rem;
