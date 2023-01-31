@@ -283,6 +283,7 @@
   margin-bottom: 5rem;
   height: 65%;
   width: 85%;
+  z-index: 0;
 }
 
 .activities-container {
@@ -306,6 +307,7 @@
   align-self: center;
   height: 65%;
   width: 85%;
+  z-index: 0;
 }
 
 @media screen and (min-width: 900px) {
@@ -321,5 +323,9 @@
   .activity {
     height: auto;
     width: 70%;
+  }
+
+  .planet-time {
+    padding-top: 1.5rem;
   }
 }
