@@ -24,14 +24,11 @@ function PlanetDetail() {
       .get("http://localhost:5000/planets")
       .then((res) => res.data)
       .then((data) => {
-        // console.log("// data ==", data);
         setMatchingPlanet(
           data.find((planet) => planet.planet_name === planetName)
         );
       });
   }, []);
-
-  // console.log(matchingPlanet);
 
   return (
     <div className={styles.container}>
