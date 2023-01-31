@@ -87,12 +87,12 @@ CREATE TABLE `rocket` (
 LOCK TABLES `rocket` WRITE;
 /*!40000 ALTER TABLE `rocket` DISABLE KEYS */;
 INSERT INTO `rocket` VALUES
-(1,'Crew Dragon','shuttle1.png',0,' A trip for 2, 3 or 4 people, until your destination ? The Crew Dragon shuttle will answer your request thanks to its minimalist structure. Created by the SpaceX space agency, this small shuttle has been used for the transit of astronaut crews in low orbit. 
+(1,'Crew Dragon','crew_dragon.png',0,' A trip for 2, 3 or 4 people, until your destination ? The Crew Dragon shuttle will answer your request thanks to its minimalist structure. Created by the SpaceX space agency, this small shuttle has been used for the transit of astronaut crews in low orbit. 
 The cargo rocket can accommodate up to 25 shuttles on board, which it will drop into the low orbits of your destinations as it travels to its final destination. 
 Programmed for your journey, your shuttle will land in the spaceport in complete control where an integration team awaits you.'),
-(2,'StarSpeeder 3000','shuttle3.png',1000, 'Developed by the Star Tour travel agency, the StarSpeeder 3000 is the safe ship for a direct trip to your destination. With a capacity of up to 40 passengers, it is the most advanced of its kind. The crew consists of 2 droids specialized in piloting and navigation assistance. 
+(2,'StarSpeeder 3000','starspeeder_3000.png',1000, 'Developed by the Star Tour travel agency, the StarSpeeder 3000 is the safe ship for a direct trip to your destination. With a capacity of up to 40 passengers, it is the most advanced of its kind. The crew consists of 2 droids specialized in piloting and navigation assistance. 
 Your journey will be carried out in the greatest safety by its technology answering the needs for the proposed journeys.'),
-(3,'USS Enterprise','shuttle2.png',3000, 'Shuttle imagined and built by NASA, it can accommodate up to fifteen people on board. A crew of 2 pilots and 3 assistants will make you enjoy a comfortable trip to your final destination.Thanks to its aerodynamic structure, you will have the sensation of traveling in a plane in space.');
+(3,'USS Enterprise','uss_enterprise.png',3000, 'Shuttle imagined and built by NASA, it can accommodate up to fifteen people on board. A crew of 2 pilots and 3 assistants will make you enjoy a comfortable trip to your final destination.Thanks to its aerodynamic structure, you will have the sensation of traveling in a plane in space.');
 /*!40000 ALTER TABLE `rocket` ENABLE KEYS */;
 UNLOCK TABLES;
 

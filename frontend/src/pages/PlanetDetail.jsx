@@ -111,13 +111,15 @@ function PlanetDetail() {
         alt="biking"
         className={styles.activity}
       />
-      <img
-        src={`${
-          import.meta.env.VITE_BACKEND_URL
-        }/assets/images/planetsActivities/${matchingPlanet.activity2_image}`}
-        alt="biking"
-        className={styles.activity}
-      />
+      {matchingPlanet.planet_name !== "Black Hole" && (
+        <img
+          src={`${
+            import.meta.env.VITE_BACKEND_URL
+          }/assets/images/planetsActivities/${matchingPlanet.activity2_image}`}
+          alt="biking"
+          className={styles.activity}
+        />
+      )}
     </div>
   );
 }

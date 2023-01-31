@@ -21,6 +21,7 @@ function Recap() {
           <>
             <p className={styles.Tripp}>
               {trip.firstName} {trip.lastName} here are your dates:
+
             </p>
             <table>
               <tbody>
