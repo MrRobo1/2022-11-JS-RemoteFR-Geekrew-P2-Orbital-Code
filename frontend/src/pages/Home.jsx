@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import styles from "../styles/Home.module.css";
-
+import BackgroundChanger from "../components/BackgroundChanger";
 import earthImg from "../assets/earth.png";
 
 function Home() {
@@ -11,6 +11,7 @@ function Home() {
   const navigate = useNavigate();
 
   const redirectPath = () => {
+    window.location.reload();
     setHideThings(true);
     setLaunchRocket(!launchRocket);
     const path = `/planets`;
@@ -21,6 +22,7 @@ function Home() {
 
   return (
     <div className={styles.container}>
+      <BackgroundChanger />
       <h1
         className={`${styles.title} ${hideThings ? styles["hide-things"] : ""}`}
       >

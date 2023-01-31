@@ -10,13 +10,13 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles["footer-content"]}>
         <div className={styles["footer-section"]}>
-          <Link to="/">About</Link>
+          <Link to="/About">About</Link>
         </div>
         <div className={styles["footer-section"]}>
-          <Link to="/">Questions</Link>
+          <Link to="/FAQ">FAQ</Link>
         </div>
         <div className={styles["footer-section"]}>
-          <Link to="/">Contact</Link>
+          <Link to="/Contact">Contact</Link>
         </div>
         <div className={styles["footer-section"]}>
           <p className={styles.copyright}>© GalaxyGetaways 2023</p>
