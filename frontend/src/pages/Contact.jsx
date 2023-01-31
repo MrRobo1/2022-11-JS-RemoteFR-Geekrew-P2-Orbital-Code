@@ -18,7 +18,7 @@ function Contact() {
             className={styles["input-contact"]}
             type="text"
             id="name"
-            nanme="name"
+            name="name"
             placeholder="Name and Last name here"
           />
 
@@ -29,7 +29,7 @@ function Contact() {
             className={styles["input-contact"]}
             type="email"
             id="email"
-            nanme="email"
+            name="email"
             placeholder="exemple@gmail.com"
           />
 
@@ -40,7 +40,7 @@ function Contact() {
             className={styles["input-contact"]}
             type="text"
             id="phone"
-            nanme="phone"
+            name="phone"
             placeholder="+12345678"
           />
 
