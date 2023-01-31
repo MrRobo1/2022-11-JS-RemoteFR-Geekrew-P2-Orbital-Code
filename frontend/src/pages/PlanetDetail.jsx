@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-// import Planet from "../components/Planet";
+import Planet from "../components/Planet";
 
 import styles from "../styles/PlanetDetail.module.css";
 
-import activity1 from "../assets/planetsActivities/biking.png";
-import activity2 from "../assets/planetsActivities/surfing.png";
+import activity1 from "../assets/planetsTextures/biking.png";
+import activity2 from "../assets/planetsTextures/surfing.png";
 
 function PlanetDetail() {
   return (
@@ -22,29 +23,30 @@ function PlanetDetail() {
           sauvages.
         </p>
       </div>
-      <div styles={styles["small-cards"]}>
-        <p className={styles["planet-type"]}>ROCKY</p>
-        <p className={styles["planet-diameter"]}>436845KM</p>
+      <div className={styles.planet}>
+        <Planet isPlanetDetail isPlanetName />
+      </div>
+      <div className={styles["small-cards"]}>
+        <p className={styles["planet-type"]}>Telluric</p>
+        <p className={styles["planet-climate"]}>Polar</p>
+        <p className={styles["planet-diameter"]}>99342827KM</p>
         <p className={styles["planet-distance"]}>29 Earth years</p>
         <p className={styles["planet-composition"]}>Gas giant</p>
       </div>
-      {/* <Planet planetDetail /> */}
-      {/* <h1 className={styles["planet-composition-title"]}>Composition</h1>
-      <p className={styles["planet-composition"]}>
-        Lorem Ipsum is simply dummy text of the printing <br /> and typesetting
-        industry. Lorem Ipsum has been the <br />
-        industry's standard dummy text ever.
-      </p> */}
-      <h1 className={styles["planet-climate-title"]}>Climate</h1>
-      <p className={styles["planet-climate"]}>
-        Lorem Ipsum is simply dummy text of the printing <br /> and typesetting
-        industry. Lorem Ipsum has been the <br />
-        industry's standard dummy text ever.
-      </p>
+      <div className={styles["reservation-button"]}>
+        <Link to="/reservation">
+          <span />
+          <span />
+          <span />
+          <span />
+          Reservation
+        </Link>
+      </div>
+      <h1 className={styles["planet-hotel-title"]}>Hotel</h1>
+      <img src={activity2} alt="biking" className={styles.hotel} />
       <h1 className={styles["planet-activities-title"]}>Activities</h1>
       <img src={activity1} alt="biking" className={styles.activity} />
-      <h1 className={styles["planet-hotel-title"]}>Hotel</h1>
-      <img src={activity2} alt="biking" className={styles.activity} />
+      <img src={activity1} alt="biking" className={styles.activity} />
     </div>
   );
 }

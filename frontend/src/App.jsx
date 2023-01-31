@@ -12,6 +12,8 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 import AfterContact from "./pages/AfterContact";
+import Recap from "./pages/Recap";
+import Confirm from "./pages/Confirm";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/about" element={<About />} />
         <Route path="/aftercontact" element={<AfterContact />} />
+        <Route path="/recap" element={<Recap />} />
+        <Route path="/confirm" element={<Confirm />} />
       </Routes>
       <Footer />
     </>
