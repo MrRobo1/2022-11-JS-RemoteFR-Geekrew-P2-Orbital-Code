@@ -16,7 +16,7 @@ function Home() {
     const path = `/planets`;
     setTimeout(() => {
       navigate(path);
-    }, 1500);
+    }, 2000);
   };
 
   return (
