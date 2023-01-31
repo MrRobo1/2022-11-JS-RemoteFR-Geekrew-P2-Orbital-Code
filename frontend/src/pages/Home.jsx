@@ -32,7 +32,7 @@ function Home() {
         }`}
       >
         Explore the <span className={styles.cosmos}>cosmos</span> beyond the
-        imaginable!
+        imaginable !
       </h1>
       <div
         id="rocket"
