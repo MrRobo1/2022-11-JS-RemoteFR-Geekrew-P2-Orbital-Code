@@ -34,7 +34,13 @@ function Recap() {
                 </tr>
               </tbody>
             </table>
-            <p className={styles.Tripp}>{trip.price}</p>
+            <p className={styles.Tripp}>{trip.price}
+              Price: <br /> <br /> Rocket {trip.price} GAX <br />
+              + <br />
+              Trip 5000 GAX <br />
+              = <br />
+              Total: <strong>{5000 + trip.price} GAX</strong>
+            </p>
           </>
         ))}
         <Link to="/confirm">

@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import styles from "../styles/Home.module.css";
-
+import BackgroundChanger from "../components/BackgroundChanger";
 import earthImg from "../assets/earth.png";
 import launch from "../assets/launch.mp3";
 
@@ -13,6 +13,7 @@ function Home() {
   const audioRef = useRef(null);
 
   const redirectPath = () => {
+    window.location.reload();
     setHideThings(true);
     setLaunchRocket(!launchRocket);
     audioRef.current.play();
@@ -24,6 +25,7 @@ function Home() {
 
   return (
     <div className={styles.container}>
+      <BackgroundChanger />
       <h1
         className={`${styles.title} ${hideThings ? styles["hide-things"] : ""}`}
       >
