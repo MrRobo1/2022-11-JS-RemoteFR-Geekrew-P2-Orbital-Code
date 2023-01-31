@@ -32,7 +32,6 @@
   animation: fadeOut 1500ms;
 }
 
-
 @keyframes fadeOut {
   from {
     opacity: 1;

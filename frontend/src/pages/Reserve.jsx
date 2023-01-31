@@ -46,6 +46,7 @@ function Reserve() {
         phone,
         departure,
         returne,
+        price,
       })
       .then(() => {
         navigate("/recap");
