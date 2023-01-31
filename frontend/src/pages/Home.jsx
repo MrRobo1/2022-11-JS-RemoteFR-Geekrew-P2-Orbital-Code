@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/media-has-caption */
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -79,7 +78,9 @@ function Home() {
         </svg>
         <span>Launch</span>
       </button>
-      <audio ref={audioRef} src={launch} />
+      <audio ref={audioRef} src={launch}>
+        <track kind="captions" />
+      </audio>
       <img src={earthImg} alt="earth" className={styles.earth} />
     </div>
   );
