@@ -19,7 +19,7 @@ function Footer() {
           <Link to="/Contact">Contact</Link>
         </div>
         <div className={styles["footer-section"]}>
-          <p>© GalaxyGetaways 2023</p>
+          <p className={styles.copyright}>© GalaxyGetaways 2023</p>
           <a href="https://github.com/WildCodeSchool/2022-11-JS-RemoteFR-Geekrew-P2-Orbital-Code">
             <img
               src={gitHubImg}
