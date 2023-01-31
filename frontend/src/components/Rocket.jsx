@@ -1,15 +1,22 @@
 import React from "react";
+import PropTypes from "prop-types";
 import useModal from "./useModal";
 import Modal from "./modal";
 import styles from "../styles/Rockets.module.css";
 
-function Rocket() {
+function Rocket({ rocket }) {
   const { isShowing, toggle } = useModal();
   return (
     <>
       <div className={styles["Rockets-1"]}>
-        <h2 className={styles["Rockets-1-name"]}>Rocket 1</h2>
-        <img className={styles["Rockets-1-img"]} src="" alt="Rocket-1" />
+        <h2 className={styles["Rockets-1-name"]}>{rocket.rocket_name}</h2>
+        <img
+          className={styles["Rockets-1-img"]}
+          src={`${import.meta.env.VITE_BACKEND_URL}/assets/images/rockets/${
+            rocket.image
+          }`}
+          alt={rocket.image}
+        />
         <button type="button" className="modal-toggle" onClick={toggle}>
           Show more
           <span />
@@ -17,19 +24,10 @@ function Rocket() {
           <span />
           <span />
         </button>
-        <Modal isShowing={isShowing} hide={toggle} />
+        <Modal isShowing={isShowing} hide={toggle} rocket={rocket} />
       </div>
 
-      <style jsx="true">{`
-        .Rockets-1 {
-          width: 80%;
-          height: auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin: 1rem;
-        }
-
+      <style>{`
         button.modal-toggle {
           font-family: "Orbitron", sans-serif;
           font-size: large;
@@ -54,5 +52,13 @@ function Rocket() {
     </>
   );
 }
+
+Rocket.propTypes = {
+  rocket: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    rocket_name: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default Rocket;

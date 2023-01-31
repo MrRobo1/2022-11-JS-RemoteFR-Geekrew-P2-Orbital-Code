@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import ReactDom from "react-dom";
 import PropTypes from "prop-types";
 
-function Modal({ isShowing, hide }) {
+function Modal({ isShowing, hide, rocket }) {
+  useLayoutEffect(() => {
+    if (!isShowing) {
+      document.getElementById("root").classList.remove("no-scroll");
+    } else document.getElementById("root").classList.add("no-scroll");
+  });
   return isShowing
     ? ReactDom.createPortal(
         <>
@@ -10,7 +15,7 @@ function Modal({ isShowing, hide }) {
             <div className="modal-wrapper">
               <div className="modal">
                 <div className="modal-header">
-                  <h4 className="modal-name">Modal Header</h4>
+                  <h4 className="modal-name">{rocket.rocket_name}</h4>
                   <button
                     type="button"
                     className="modal-close-button"
@@ -19,12 +24,12 @@ function Modal({ isShowing, hide }) {
                     <span>&times;</span>
                   </button>
                 </div>
-                <div className="modal-body">Hello Modal Here</div>
+                <div className="modal-body">{rocket.description}</div>
               </div>
             </div>
           </div>
 
-          <style jsx="true">{`
+          <style>{`
             .modal-overlay {
               position: fixed;
               top: 0;
@@ -32,14 +37,14 @@ function Modal({ isShowing, hide }) {
               width: 100%;
               height: 100%;
               z-index: 250;
-              background-color: rgba(0, 0, 0, 0.5);
+              background-color: rgba(0, 0, 0, 0.8);
             }
 
             .modal-wrapper {
               position: fixed;
               top: 0;
               left: 0;
-              z-index: 1050;
+              z-index: 100;
               width: 100%;
               height: 100%;
               overflow-x: hidden;
@@ -51,7 +56,7 @@ function Modal({ isShowing, hide }) {
 
             .modal {
               z-index: 100;
-              background: rgba(255, 255, 255, 0.7);
+              background: rgba(0, 0, 0, 0.7);
               position: relative;
               margin: auto;
               border: 0.2rem solid rgba(3, 151, 145, 1);
@@ -82,6 +87,15 @@ function Modal({ isShowing, hide }) {
               border: none;
               background: transparent;
             }
+
+            .modal-body {
+              margin: 1rem;
+              font-family: "Karla", sans-serif;
+              font-size: medium;
+              color: rgb(255, 255, 255);
+              line-height: 1.6rem;
+              letter-spacing: 0.07rem;
+            }
           `}</style>
         </>,
         document.body
@@ -92,5 +106,10 @@ function Modal({ isShowing, hide }) {
 Modal.propTypes = {
   isShowing: PropTypes.bool.isRequired,
   hide: PropTypes.func.isRequired,
+  rocket: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+    rocket_name: PropTypes.string.isRequired,
+  }).isRequired,
 };
 export default Modal;

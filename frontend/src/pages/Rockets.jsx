@@ -1,9 +1,16 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import Rocket from "../components/Rocket";
-
 import styles from "../styles/Rockets.module.css";
 
 function Rockets() {
+  const [rockets, setRockets] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:8000/rockets").then((res) => {
+      setRockets(res.data);
+    });
+  }, []);
   return (
     <div className={styles.container}>
       Rockets
@@ -18,11 +25,14 @@ function Rockets() {
           journey to the holiday of your dreams.
         </p>
       </div>
-      <div className={styles["Rockets-list"]}>
-        <Rocket />
-        <Rocket />
-        <Rocket />
-      </div>
+      <ul className={styles["Rockets-list"]}>
+        {rockets.length &&
+          rockets.map((rocket) => (
+            <li key={rocket.id}>
+              <Rocket rocket={rocket} />
+            </li>
+          ))}
+      </ul>
     </div>
   );
 }
