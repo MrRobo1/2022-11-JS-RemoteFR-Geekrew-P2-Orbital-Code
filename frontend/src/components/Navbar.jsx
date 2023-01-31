@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import styles from "../styles/Navbar.module.css";
 
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/logo0.png";
 import burgerImg from "../assets/menu-btn.png";
 import closeBurgerImg from "../assets/close-menu-btn.png";
 

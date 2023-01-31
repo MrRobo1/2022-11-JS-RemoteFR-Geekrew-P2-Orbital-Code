@@ -8,12 +8,14 @@
   background-color: rgba(255, 255, 255, 0.03);
   border-radius: 3rem;
   margin: 1.5rem;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 15px 25px rgba(57, 57, 57, 0.26);
 }
 
 .planet-name {
   text-align: center;
   margin-top: 2.5rem;
-  color: #03e8f4ca;
+  color: #efefefe9;
   font-size: 3rem;
 }
 
@@ -21,7 +23,7 @@
   margin: 0 2rem;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  color: rgba(255, 255, 255, 0.810);
+  color: rgba(255, 255, 255, 0.81);
   font-size: 1.4rem;
   text-align: center;
   line-height: 1.7em;
@@ -55,11 +57,11 @@
   text-align: center;
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.07);
-  color: rgba(255, 255, 255, 0.810);
+  color: rgba(255, 255, 255, 0.81);
   display: inline-block;
   height: 4em;
   width: 12em;
-  padding-top: 1.3rem;
+  padding-top: 1.4rem;
   margin-left: 1rem;
   border-radius: 5em;
   letter-spacing: 0.15em;
@@ -71,11 +73,11 @@
   text-align: center;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.07);
-  color: rgba(255, 255, 255, 0.810);
+  color: rgba(255, 255, 255, 0.81);
   display: inline-block;
   height: 4em;
   width: 12em;
-  padding-top: 1.3rem;
+  padding-top: 1.4rem;
   margin-left: 1.5rem;
   border-radius: 5em;
   letter-spacing: 0.15em;
@@ -87,11 +89,11 @@
   text-align: center;
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.07);
-  color: rgba(255, 255, 255, 0.810);
+  color: rgba(255, 255, 255, 0.81);
   display: inline-block;
   height: 4em;
   width: 12em;
-  padding-top: 1.3rem;
+  padding-top: 0.9rem;
   margin-left: 1.5rem;
   border-radius: 5em;
   letter-spacing: 0.15em;
@@ -99,15 +101,15 @@
   transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
 }
 
-.planet-distance {
+.planet-time {
   text-align: center;
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.07);
-  color: rgba(255, 255, 255, 0.810);
+  color: rgba(255, 255, 255, 0.81);
   display: inline-block;
   height: 4em;
   width: 12em;
-  padding-top: 1.3rem;
+  padding-top: 1rem;
   margin-left: 1.5rem;
   border-radius: 5em;
   letter-spacing: 0.15em;
@@ -119,11 +121,11 @@
   text-align: center;
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.07);
-  color: rgba(255, 255, 255, 0.810);
+  color: rgba(255, 255, 255, 0.81);
   display: inline-block;
   height: 4em;
   width: 12em;
-  padding-top: 1.3rem;
+  padding-top: 1.4rem;
   margin-left: 1.5rem;
   border-radius: 5em;
   letter-spacing: 0.15em;
@@ -258,6 +260,12 @@
   }
 }
 
+.hotel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .planet-hotel-title {
   display: flex;
   justify-content: center;
@@ -272,8 +280,14 @@
   display: flex;
   align-self: center;
   margin-bottom: 5rem;
-  height: 30%;
-  width: 75%;
+  height: 65%;
+  width: 85%;
+}
+
+.activities-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .planet-activities-title {
@@ -287,8 +301,24 @@
 
 .activity {
   display: flex;
-  align-self: center;
   margin-bottom: 2rem;
-  height: 30%;
-  width: 75%;
+  align-self: center;
+  height: 65%;
+  width: 85%;
+}
+
+@media screen and (min-width: 900px) {
+  .title {
+    margin: 5rem;
+  }
+
+  .hotel {
+    height: auto;
+    width: 70%;
+  }
+
+  .activity {
+    height: auto;
+    width: 70%;
+  }
 }

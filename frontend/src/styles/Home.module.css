@@ -10,8 +10,8 @@
   align-self: center;
   text-align: center;
   margin-top: 2.5rem;
-  font-size: 2.8rem;
-  letter-spacing: 0.10em;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
   color: #fff;
   font-family: "Orbitron", sans-serif;
   text-shadow: #ffffff5d 3px 3px 50px;
@@ -20,9 +20,10 @@
 .slogan {
   align-self: center;
   text-align: center;
-  color: #6419dc;
+  color: #7d7d7d;
   margin-top: 1rem;
   z-index: 200;
+  font-size: 1.6rem;
   font-family: "Orbitron", sans-serif;
   font-weight: lighter;
 }
@@ -30,7 +31,6 @@
 .hide-things {
   animation: fadeOut 1500ms;
 }
-
 
 @keyframes fadeOut {
   from {
@@ -48,16 +48,15 @@
   align-self: center;
   cursor: pointer;
   height: 6%;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
-  padding: 0.8em 1.3em 0.8em 0.9em;
-  border: 3px solid #36008d;
+  padding: 1.2em 1.3em 1.2em 0.9em;
+  border: 3px solid #0b073d;
   border-radius: 1rem;
   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
     rgba(46, 54, 80, 0.075) 0 1px 1px;
   color: white;
-  border-color: rgb(22, 11, 58);
   letter-spacing: 0.05em;
   border-radius: 16px;
 }
@@ -164,8 +163,26 @@
 .earth {
   align-self: center;
   margin-top: 5rem;
-  margin-bottom: -1rem;
+  margin-bottom: -3rem;
   width: 80%;
   z-index: 200;
   filter: drop-shadow(0px 0px 30px rgba(5, 0, 165, 0.2));
+}
+
+@media screen and (min-width: 900px) {
+  .btn-redirect {
+    padding: 0.8em 1.3em 0.8em 0.9em;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .slogan {
+    font-size: 2rem;
+  }
+
+  .earth {
+    margin-bottom: -1rem;
+  }
 }

@@ -2,12 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 
-import styles from "../styles/Planet.module.css";
+import styles from "../../styles/planets/Jupiter.module.css";
 
-function Planet({ isPlanetDetail, isPlanetName }) {
+function Jupiter({ isPlanetDetail, isPlanetName }) {
   const navigate = useNavigate();
+  const planetName = "Jupiter";
   const onPressPlanet = () => {
-    const path = `/planetDetail`;
+    const path = `/planetDetail?planetName=${planetName}`;
     setTimeout(() => {
       navigate(path);
     }, 100);
@@ -28,15 +29,20 @@ function Planet({ isPlanetDetail, isPlanetName }) {
           isPlanetName ? styles["no-planet-name"] : ""
         }`}
       >
-        PlanetName
+        Jupiter
       </button>
     </>
   );
 }
 
-Planet.propTypes = {
-  isPlanetDetail: PropTypes.string.isRequired,
-  isPlanetName: PropTypes.string.isRequired,
+Jupiter.propTypes = {
+  isPlanetDetail: PropTypes.bool,
+  isPlanetName: PropTypes.bool,
 };
 
-export default Planet;
+Jupiter.defaultProps = {
+  isPlanetDetail: false,
+  isPlanetName: false,
+};
+
+export default Jupiter;

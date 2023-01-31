@@ -52,6 +52,10 @@ b:after {
   color: #fff;
 }
 
+.no-planet-name {
+  display: none;
+}
+
 .black-hole-name:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -59,12 +63,12 @@ b:after {
 
 @media screen and (min-width: 1150px) {
   b {
-    width: 40vmin;
-    height: 41vmin;
+    width: 35vmin;
+    height: 36vmin;
     box-shadow: 1vmin 0 3vmin 2vmin #f50,
       inset -1vmin 0 3vmin 4vmin rgb(17, 9, 1),
       -4vmin 0 20vmin 0 rgb(128, 10, 10);
-    animation: bh 1s linear infinite;
+    animation: bh 5s linear infinite;
   }
 
   b:before {
