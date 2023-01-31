@@ -178,19 +178,19 @@ function Reserve() {
               Uss Enterprise*
             </label>
           </div>
-          <div className={styles.BtnRocket}>
-            <Link to="/rockets">
-              <i>*Find out more about means of transport</i>
-            </Link>
-          </div>
+          <Link to="/rockets">
+            <i>*Find out more about means of transport</i>
+          </Link>
           <p>Supplement Rocket: {price} GAX</p>
-          <button type="button" onClick={handleSubmit}>
-            <span />
-            <span />
-            <span />
-            <span />
-            Reservation
-          </button>
+          <div className={styles.BtnRocket}>
+            <button type="button" onClick={handleSubmit}>
+              <span />
+              <span />
+              <span />
+              <span />
+              Reservation
+            </button>
+          </div>
         </form>
       </div>
     </div>

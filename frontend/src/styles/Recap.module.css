@@ -31,8 +31,8 @@
   border-radius: 10px;
 }
 
-.BackRecap h1,
-td,
+.BackRecap h1
+td
 p {
   color: #fff;
   margin-top: 3rem;

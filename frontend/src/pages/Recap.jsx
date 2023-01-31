@@ -37,9 +37,9 @@ function Recap() {
             <p>
               Price: <br /> <br /> Rocket {trip.price} GAX <br />
               + <br />
-              Trip 5000 GAX <br />
+              Trip 4999.99 GAX <br />
               = <br />
-              Total: <strong>{5000 + trip.price} GAX</strong>
+              Total: <strong>{4999.99 + trip.price} GAX</strong>
             </p>
           </>
         ))}
