@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "../styles/FAQ.module.css";
+import BackgroundChanger from "../components/BackgroundChanger";
 
 function FAQ() {
   return (
     <div className={styles["accordion-arrows"]}>
+      <BackgroundChanger />
       <div className={styles["Header-box"]}>
         <label htmlFor="acc-close">FAQ Page</label>
       </div>

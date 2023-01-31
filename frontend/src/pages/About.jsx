@@ -1,14 +1,15 @@
-/* eslint-disable prettier/prettier */
 import React from "react";
 import styles from "../styles/About.module.css";
 import CosmonautImg from "../assets/imagesAbout/Cosmonaut.png";
 import Linkedin from "../assets/logos/linkedin.png";
 import gitHubImg from "../assets/logos/github.png";
 import email from "../assets/logos/email.png";
+import BackgroundChanger from "../components/BackgroundChanger";
 
 function About() {
   return (
     <section className={styles["section-white"]}>
+      <BackgroundChanger />
       <div className={styles.title}>
         <h2 className={styles["section-title"]}>The Team Orbital Code</h2>
         <p className={styles.paragraph}>
@@ -35,8 +36,8 @@ function About() {
               <p>Web developer</p>
             </div>
             <p>
-              Francesco is a talented web developer and cosmonaut who excels in both
-              areas. He uses his skills in web development to create innovative
+              Francesco is a talented web developer and cosmonaut who excels in
+              both both areas. He uses his skills in web development to create
               solutions for space missions, and his passion for space
               exploration has leads to becoming an experienced cosmonaut. He is
               able to combine his two passions to create advanced technologies.
@@ -82,7 +83,7 @@ function About() {
               <p>Web developer</p>
             </div>
             <p>
-            Claudia is a passionate cosmonaut and web developer talented. She
+              Claudia is a passionate cosmonaut and web developer talented. She
               has great expertise in space technologies, having spent many years
               work on space missions with a space agency international. She is
               also skilled in web development, using her skills to create sites

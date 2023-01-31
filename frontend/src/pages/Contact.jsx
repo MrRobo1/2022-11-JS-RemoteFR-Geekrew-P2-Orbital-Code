@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Contact.module.css";
+import BackgroundChanger from "../components/BackgroundChanger";
 
 function Contact() {
   return (
     <div className={styles["container-all"]}>
+      <BackgroundChanger />
       <h1 className={styles["h1-contact"]}>Contact us !</h1>
 
       <form className={styles["contact-form"]}>

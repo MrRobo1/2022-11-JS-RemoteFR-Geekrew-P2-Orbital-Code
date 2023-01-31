@@ -5,7 +5,6 @@
   padding: 0.5rem;
 }
 body {
-  background-image: url("/src/assets/imagesAbout/DeepSpace.png");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
