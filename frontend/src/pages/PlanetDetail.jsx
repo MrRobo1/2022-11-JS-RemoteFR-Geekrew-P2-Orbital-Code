@@ -34,7 +34,7 @@ function PlanetDetail() {
         <p className={styles["planet-composition"]}>Gas giant</p>
       </div>
       <div className={styles["reservation-button"]}>
-        <Link to="/">
+        <Link to="/reservation">
           <span />
           <span />
           <span />
