@@ -170,12 +170,6 @@
   height: 100%;
 }
 
-/* @media screen and (max-width: 1600px) {
-  .earth {
-    margin-bottom: -10rem;
-  }
-} */
-
 @media screen and (min-width: 900px) {
   .btn-redirect {
     padding: 0.8em 1.3em 0.8em 0.9em;
