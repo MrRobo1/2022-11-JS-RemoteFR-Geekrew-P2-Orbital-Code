@@ -8,7 +8,7 @@ function Recap() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/trips")
+      .get(`${import.meta.env.VITE_BACKEND_URL}/trips`)
       .then((res) => setTrips(res.data))
       .catch((err) => console.error(err));
   }, []);

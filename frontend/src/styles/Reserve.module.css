@@ -49,6 +49,7 @@
   outline: none;
   background: transparent;
 }
+
 .Reserv-box .user-box label {
   position: absolute;
   top: 0;
@@ -60,8 +61,8 @@
   transition: 0.5s;
 }
 
-.Reserv-box .user-box input:focus ~ label,
-.Reserv-box .user-box input:valid ~ label {
+.Reserv-box .user-box input:focus~label,
+.Reserv-box .user-box input:valid~label {
   top: -20px;
   left: 0;
   color: #03e9f4;
@@ -124,6 +125,7 @@ input {
   0% {
     left: -100%;
   }
+
   50%,
   100% {
     left: 100%;
@@ -144,6 +146,7 @@ input {
   0% {
     top: -100%;
   }
+
   50%,
   100% {
     top: 100%;
@@ -164,6 +167,7 @@ input {
   0% {
     right: -100%;
   }
+
   50%,
   100% {
     right: 100%;
@@ -184,6 +188,7 @@ input {
   0% {
     bottom: -100%;
   }
+
   50%,
   100% {
     bottom: 100%;
@@ -202,6 +207,10 @@ i {
   align-items: center;
 }
 
+.reserv {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 900px) {
   .Reserv-box {
     display: flex;
@@ -217,8 +226,8 @@ i {
     font-size: 20px;
   }
 
-  .Reserv-box .user-box input:focus ~ label,
-  .Reserv-box .user-box input:valid ~ label {
+  .Reserv-box .user-box input:focus~label,
+  .Reserv-box .user-box input:valid~label {
     font-size: 15px;
   }
 

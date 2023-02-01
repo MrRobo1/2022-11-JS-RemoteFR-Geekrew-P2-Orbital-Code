@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import styles from "../styles/Reserve.module.css";
 
+import BackgroundChanger from "../components/BackgroundChanger";
+
 function Reserve() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -39,7 +41,7 @@ function Reserve() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/trips", {
+      .post(`${import.meta.env.VITE_BACKEND_URL}/trips`, {
         firstName,
         lastName,
         mail,
@@ -78,6 +80,7 @@ function Reserve() {
 
   return (
     <div className={styles.Container}>
+      <BackgroundChanger />
       <div className={styles["Reserv-box"]}>
         <h2>Reservation</h2>
         <form>
@@ -183,7 +186,11 @@ function Reserve() {
           </Link>
           <p>Supplement Rocket: {price} GAX</p>
           <div className={styles.BtnRocket}>
-            <button type="button" onClick={handleSubmit}>
+            <button
+              type="button"
+              className={styles.reserv}
+              onClick={handleSubmit}
+            >
               <span />
               <span />
               <span />
