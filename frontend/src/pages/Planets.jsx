@@ -1,7 +1,12 @@
 import React from "react";
+import PlanetCarousel from "../components/PlanetCarousel";
 
 function Planets() {
-  return <div>Planets</div>;
+  return (
+    <div>
+      <PlanetCarousel />
+    </div>
+  );
 }
 
 export default Planets;
