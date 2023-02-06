@@ -21,7 +21,7 @@ function PlanetDetail() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/planets")
+      .get("http://localhost:8000/planets")
       .then((res) => res.data)
       .then((data) => {
         setMatchingPlanet(

@@ -8,7 +8,7 @@ function Recap() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/trips")
+      .get("http://localhost:8000/trips")
       .then((res) => setTrips(res.data))
       .catch((err) => console.error(err));
   }, []);
